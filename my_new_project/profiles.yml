@@ -4,7 +4,7 @@ my_new_project:
       account: fka50167
       database: analytics
       password: "{{ env_var('DBT_PASSWORD') }}"
-      role: transformer
+      role: Transformer
       schema: "{{ env_var('DBT_SCHEMA') }}"
       threads: 4
       type: snowflake

@@ -18,9 +18,17 @@
 	"forwardPorts": [5000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postStartCommand": "bash scripts/install-dependencies.sh",
+	"postCreateCommand": "bash scripts/install-dependencies.sh",
 	"customizations": {
 		"vscode": {
+
+			"files.associations": {
+				"*.yaml": "jinja-yaml",
+				"*.yml": "jinja-yaml",
+				"*.sql": "jinja-sql",
+				"*.md": "jinja-md"}
+		,
+
 			"extensions": [
 				"innoverio.vscode-dbt-power-user"
 			]

@@ -1,3 +1,3 @@
 pip3 install --user -r requirements.txt
 mkdir -p ~/.dbt/
-echo "Hi! Welcome to the training environment for dbt Learn!"
+echo "Hi! Start by executing 'dbt init' to create your first dbt project."
