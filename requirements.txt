@@ -1,0 +1,4 @@
+dbt-core 
+dbt-snowflake
+sqlfluff
+sqlparse

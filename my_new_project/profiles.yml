@@ -1,0 +1,13 @@
+my_new_project:
+  outputs:
+    dev:
+      account: fka50167
+      database: analytics
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: transformer
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      threads: 4
+      type: snowflake
+      user: "{{ env_var('DBT_USER') }}"
+      warehouse: transforming
+  target: dev
