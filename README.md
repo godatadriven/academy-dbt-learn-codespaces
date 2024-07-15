@@ -11,6 +11,22 @@ of dbt, covering its core concepts and functionalities. Participants will
 learn how to use dbt to build and maintain data models, perform data 
 transformations, and ensure data quality through rigorous testing and documentation.
 
+## Working with the project
+
+### 2. Click 'Code', then 'Codespaces, then 'Create codespace on main'.
+
+![Create codespace on main](images/open-codespace.gif)
+
+This will create a new `codespace`, a sandbox with everything you need for the training. 
+
+Once the codespace is finished setting up, you will need to:
+1. Update the `jaffle_shop_training/profiles.yml` with your credentials:
+    - Username & password: provided to you individually
+    - Schema: `dbt_firstname_lastname` (eg. `dbt_lucy_sheppard`)
+2. Change directory using the command `cd jaffle_shop_training` in the terminal
+3. Run dbt debug to test your credentials and connection
+
+
 ## Data Overview
 The Jaffle data set will be used throughout this training. Jaffle data is a 
 sample dataset that simulates a simple e-commerce store, including customers, 
