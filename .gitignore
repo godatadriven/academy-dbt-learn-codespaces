@@ -1,3 +1,4 @@
 .DS_Store
 dbt.log
 .user.yml
+profiles.yml
