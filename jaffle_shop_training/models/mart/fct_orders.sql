@@ -1,18 +1,22 @@
 with orders as (
-    select * from {{ ref('stg_jaffle_shop_orders') }}
+    select * from {{ ref('stg_jaffle_shop__orders') }}
+),
+
+payments as (
+    select * from {{ ref('stg_stripe__payments') }}
+),
+
+pivoted_payments as (
+    select * from {{ ref('pivoted_payments') }}
 ),
 
 grouped_payments as (
     select 
         order_id,
         sum(payment_amount) as order_amount
-    from {{ ref('stg_stripe_payments') }}
+    from {{ ref('stg_stripe__payments') }}
     where payment_status = 'success'
     group by 1
-),
-
-pivoted_payments as (
-    select * from {{ ref('pivoted_payments') }}
 )
 
 select 
