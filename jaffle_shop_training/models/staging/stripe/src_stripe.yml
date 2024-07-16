@@ -7,3 +7,9 @@ sources:
     tables:
       - name: payments
         identifier: payment
+        columns:
+          - name: amount
+            tests:
+              - dbt_utils.expression_is_true:
+                  expression: ">= 0"
+                

@@ -1,6 +1,11 @@
-{# {% set payment_methods = dbt_utils.get_column_values(table=ref('stg_payments'), column='payment_method') -%} #}
+{{ config(
+    materialized='ephemeral'
+) }}
 
-{% set payment_methods = ['bank_transfer', 'credit_card', 'coupon', 'gift_card'] -%}
+
+{% set payment_methods = dbt_utils.get_column_values(table=ref('stg_stripe__payments'), column='payment_method') -%}
+
+{# {% set payment_methods = ['bank_transfer', 'credit_card', 'coupon', 'gift_card'] -%} #}
 
 with payments as (
     select * from {{ ref('stg_stripe__payments') }}

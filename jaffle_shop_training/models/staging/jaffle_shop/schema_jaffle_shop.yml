@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_jaffle_shop__orders
+    description: One record per order
+    columns:
+      - name: order_id
+        description: This is the primary key
+        tests:
+          - unique
+          - not_null
+      - name: order_status
+        description: "{{ doc('order_status') }}"
+        tests:
+          - accepted_values:
+              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+      - name: amount
+        description: Amount in USD
