@@ -1,13 +1,12 @@
-# dbt Training with Jaffle Data
-Welcome to the dbt training session! 
-In this training, the Jaffle data will be used to explore and understand 
-the fundamentals of dbt. By the end of this session, 
-participants will have a strong grasp of how to utilize dbt to transform 
-and manage data effectively.
+# dbt Training
+Welcome to dbt training! 
+This repository contains two projects:
+- the Jaffle data to explore and understand the fundamentals of dbt
+- the Shipments data to explore data modeling concepts in real world setting
 
 ## Overview
 This training session is designed to provide a comprehensive understanding 
-of dbt, covering its core concepts and functionalities. Participants will 
+of dbt, covering its core concepts and functionalities. You will 
 learn how to use dbt to build and maintain data models, perform data 
 transformations, and ensure data quality through rigorous testing and documentation.
 
@@ -20,20 +19,27 @@ transformations, and ensure data quality through rigorous testing and documentat
 This will create a new `codespace`, a sandbox with everything you need for the training. 
 
 Once the codespace is finished setting up, you will need to:
-1. Update the `jaffle_shop_training/profiles.yml` with your credentials:
+1. Change directory using the command `cd jaffle_shop_training` or `cd shipments` in the terminal
+2. Update the `profiles.yml` file with your credentials:
     - Username & password: provided to you individually
-    - Schema: `dbt_firstname_lastname` (eg. `dbt_lucy_sheppard`)
-2. Change directory using the command `cd jaffle_shop_training` in the terminal
-3. Run dbt debug to test your credentials and connection
-
+    - Schema: `dbt_firstletterlastname` (eg. `dbt_lsheppard`)
+3. Run `dbt debug` to test your credentials and connection
 
 ## Data Overview
+
+### Jaffle data
 The Jaffle data set will be used throughout this training. Jaffle data is a 
 sample dataset that simulates a simple e-commerce store, including customers, 
 orders, and payments. This dataset provides a practical context for learning 
 and applying dbt concepts, making it easier to understand real-world applications of dbt.
 
-## Agenda
+### Shipments data
+The Shipments Data represents transactional information related to the movement of goods, capturing details 
+about shipments, customers, businesses, drivers, vehicles, and shipment types. The data is structured across 
+several core tables, each containing important attributes that help track and analyze shipment performance, 
+customer interactions, and business operations.
+
+## Agenda - dbt Group Training
 
 ### 1. dbt Fundamentals
 Introduction to the basics of dbt, including its purpose, key components, and 
