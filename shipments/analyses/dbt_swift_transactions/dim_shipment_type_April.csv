@@ -1,0 +1,3 @@
+shipment_type,price_per_kg,shipment_type_id
+Express Shipment,5.0,1
+Regular Shipment,3.0,2

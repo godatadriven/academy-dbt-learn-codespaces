@@ -1,0 +1,242 @@
+vehicle_type,manufacturer,model,license_plate,fuel_type,status,purchase_date,last_service_date,mileage,location_id,ownership,gps_tracking_enabled,vehicle_id
+truck,TitanHaul Motors,Titan T-1000,OWJ1496,diesel,decommissioned,1999-03-02,2023-09-19,901800.0,X-PST1SA87JP,owned,False,ccc-q6asx-irlqzw
+truck,TitanHaul Motors,Titan T-1000,NVU1080,gasoline,active,2010-06-04,2021-07-06,500412.0,L-Y4LFNGHFTF,owned,True,aba-rxcsz-r6wdpz
+truck,TitanHaul Motors,Titan T-1000,QUA9045,gasoline,under maintenance,1997-03-08,2022-04-06,1013168.0,Y-5UZGCDJFTQ,owned,True,ccc-uvaqf-uvfrlv
+truck,TitanHaul Motors,Titan T-1000,ZNA2793,electric,decommissioned,2006-09-07,2023-08-19,664832.0,X-PST1SA87JP,leased,True,cad-wqk2z-mx3ibv
+truck,TitanHaul Motors,HaulMaster XL,BIH7087,electric,active,2019-11-10,2020-07-24,146000.0,X-ERN78A8BIV,rented,False,ccc-rnhki-ikmx2b
+truck,TitanHaul Motors,HaulMaster XL,NDQ9248,diesel,active,2003-07-19,2021-02-12,756636.0,L-GUMMXT8Q1Z,owned,True,cdc-m2bjz-95lkbp
+truck,TitanHaul Motors,Titan Bison,UJL2571,diesel,active,2015-07-18,2023-04-05,303600.0,L-GUMMXT8Q1Z,owned,True,cdc-ol5zv-j4zp4h
+truck,TitanHaul Motors,Titan Bison,VZM5018,electric,under maintenance,2022-10-23,2021-07-28,38964.0,X-ERN78A8BIV,leased,False,cdc-y2qdy-jfxptn
+truck,TitanHaul Motors,Titan Bison,HMU2885,gasoline,active,1999-03-28,2022-11-12,935168.0,L-VDZI8V8HLZ,rented,False,cad-4ynzb-gxupzn
+truck,TitanHaul Motors,Colossus Cargo,MRY6963,electric,under maintenance,1997-08-02,2021-12-12,959500.0,Y-5UZGCDJFTQ,rented,True,ccc-srqka-g3tbqf
+truck,TitanHaul Motors,Colossus Cargo,HAV0208,gasoline,active,2020-12-15,2021-06-03,108018.0,L-VDZI8V8HLZ,rented,True,ccc-2ioqb-f9mr6g
+truck,TitanHaul Motors,Pixie Cruiser 3000,KPB6138,gasoline,active,2010-03-20,2021-04-06,498200.0,L-GUMMXT8Q1Z,owned,True,cbc-jrncr-i4pzow
+truck,TitanHaul Motors,Pixie Cruiser 3000,AZG0421,electric,active,2005-02-02,2020-07-18,699108.0,L-VFDKW4CZZE,owned,True,ccc-qywxb-uhfodz
+truck,TitanHaul Motors,Pixie Cruiser 3000,GTG2007,diesel,active,2019-06-04,2023-07-22,168376.0,X-CDOOP2OM6X,owned,True,cad-kl9ba-m5mmsv
+truck,TitanHaul Motors,Pixie Cruiser 3000,SLI9448,electric,decommissioned,2013-10-14,2021-05-23,389868.0,L-VDZI8V8HLZ,owned,False,cad-nwmst-fxaat6
+truck,TitanHaul Motors,PedalSprite Racer,DUS9753,diesel,under maintenance,2016-04-25,2021-05-23,275400.0,L-Y4LFNGHFTF,owned,False,aba-oyamv-yo30cb
+truck,TitanHaul Motors,PedalSprite Racer,AFQ0743,diesel,active,2004-10-26,2020-01-13,709206.0,X-ZNH63CQIER,leased,True,aba-huw7h-8fspnt
+truck,TitanHaul Motors,CloudRider Lite,ZUP9485,electric,under maintenance,2005-08-25,2020-05-17,665000.0,L-VDZI8V8HLZ,rented,False,cad-hz7ig-v8utxs
+truck,TitanHaul Motors,CloudRider Lite,WTZ3912,diesel,active,2022-09-04,2021-11-16,43962.0,L-Y4LFNGHFTF,leased,True,cad-ntnhz-kuznqt
+truck,TitanHaul Motors,CloudRider Lite,UXV1041,electric,decommissioned,2016-09-21,2023-06-22,270920.0,X-CDOOP2OM6X,rented,True,cad-x4oof-zy2bte
+truck,TitanHaul Motors,Urban Whirlwind,AFH4265,diesel,decommissioned,2021-06-04,2020-12-10,88800.0,X-TOMBKLRCRP,leased,True,aba-owho8-iquft2
+truck,TitanHaul Motors,Urban Whirlwind,EEZ0998,electric,under maintenance,2018-05-03,2021-07-22,205632.0,X-ERN78A8BIV,leased,False,cdc-wlzxn-rhe5wu
+truck,TitanHaul Motors,SwiftSonic 1,FCK0914,gasoline,decommissioned,2021-10-17,2020-03-18,75300.0,X-CDOOP2OM6X,leased,False,ccc-i7idq-x98ipc
+truck,TitanHaul Motors,SwiftSonic 1,YYS7574,diesel,active,2019-01-24,2023-11-05,178500.0,X-6YAEJUWDYV,owned,False,cdc-ctbh2-umfecb
+truck,TitanHaul Motors,SwiftSonic 1,SGH5777,gasoline,under maintenance,2016-10-27,2020-12-10,267176.0,X-PST1SA87JP,owned,True,aba-0l4wo-2yxyyb
+truck,TitanHaul Motors,SwiftSonic 1,SEE4173,electric,decommissioned,2006-09-28,2020-10-26,662606.0,X-ERN78A8BIV,rented,False,cdc-jts3h-bc562b
+truck,TitanHaul Motors,SwiftSonic 1,TXW8299,electric,decommissioned,2001-12-07,2022-11-16,864756.0,Y-RXHIWAJEYG,owned,True,cbc-oqw2p-d3n5l9
+truck,TitanHaul Motors,SwiftSonic 1,EHG6750,electric,decommissioned,2014-07-02,2020-10-06,375870.0,X-ERN78A8BIV,rented,False,cad-5cmss-l6wv44
+truck,TitanHaul Motors,CometWhirl 20X,VWN8895,electric,active,1999-05-06,2023-06-26,895300.0,Y-5UZGCDJFTQ,rented,True,ccc-u7m4j-xdemc4
+truck,TitanHaul Motors,CometWhirl 20X,LAT2384,diesel,decommissioned,2002-07-03,2023-06-21,795498.0,Y-RXHIWAJEYG,rented,False,cad-c8mgo-ygw9hr
+truck,TitanHaul Motors,AeroStreaker,CVG2308,electric,under maintenance,1997-04-25,2021-01-26,969400.0,L-VFDKW4CZZE,leased,True,cad-twofq-bp1pd3
+truck,TitanHaul Motors,AeroStreaker,WQF1764,gasoline,under maintenance,2007-12-03,2020-07-20,593640.0,X-CDOOP2OM6X,rented,True,ccc-9m4np-tiz8px
+truck,TitanHaul Motors,AeroStreaker,ZHH6587,electric,under maintenance,2005-08-21,2020-12-20,692016.0,L-VFDKW4CZZE,owned,True,cdc-xrmll-kbojos
+truck,TitanHaul Motors,AeroStreaker,VOX8053,electric,decommissioned,2011-01-07,2020-08-28,497034.0,X-ZNH63CQIER,rented,False,cbc-fwgfj-l2mtjv
+truck,TitanHaul Motors,GlidePath Tourer,THS2028,diesel,decommissioned,2002-10-14,2022-01-11,769600.0,Y-RXHIWAJEYG,leased,False,ccc-avajt-ntmrpo
+truck,TitanHaul Motors,GlidePath Tourer,SBA1698,electric,active,2008-01-21,2023-06-24,588642.0,L-Y4LFNGHFTF,owned,False,cbc-tb9ic-fo6q4r
+truck,Mammoth Movers,Titan T-1000,QFH1236,electric,decommissioned,2014-03-22,2021-03-21,380052.0,L-Y4LFNGHFTF,owned,False,ccc-ikmq4-nzdfov
+truck,Mammoth Movers,Titan T-1000,LBU7547,electric,active,2011-05-05,2021-01-25,502810.0,L-GUMMXT8Q1Z,leased,True,aba-ad20u-bzphu8
+truck,Mammoth Movers,Titan T-1000,SKI7198,diesel,decommissioned,2023-02-02,2023-06-12,31360.0,X-CDOOP2OM6X,rented,True,ccc-47gel-emtt2q
+truck,Mammoth Movers,Titan T-1000,FXP6169,electric,decommissioned,2019-04-26,2022-12-27,189012.0,L-GUMMXT8Q1Z,owned,False,cad-mrknz-0r6v7l
+truck,Mammoth Movers,HaulMaster XL,FXQ3827,electric,decommissioned,2009-06-22,2021-11-22,546312.0,X-ZNH63CQIER,leased,False,ccc-ji4yc-gugdco
+truck,Mammoth Movers,HaulMaster XL,GHK2378,gasoline,under maintenance,2021-01-20,2021-09-18,108438.0,X-ZNH63CQIER,rented,False,cad-fblgd-9fwap5
+truck,Mammoth Movers,Titan Bison,VCE7335,diesel,under maintenance,2020-06-25,2023-04-18,130592.0,L-Y4LFNGHFTF,owned,False,ccc-9adkq-ylpooc
+truck,Mammoth Movers,Titan Bison,FFT4162,electric,decommissioned,2007-09-17,2021-10-15,636876.0,L-Y4LFNGHFTF,leased,True,cad-hf01i-kbmw0r
+truck,Mammoth Movers,Titan Bison,XDP6853,electric,decommissioned,2013-12-20,2023-04-12,397210.0,X-6YAEJUWDYV,owned,False,cad-tiufw-t7xaby
+truck,Mammoth Movers,Colossus Cargo,KKV8429,gasoline,under maintenance,2001-03-09,2022-12-19,861120.0,L-VDZI8V8HLZ,leased,False,cbc-imsm7-ze0j8d
+truck,Mammoth Movers,Colossus Cargo,ROJ2498,gasoline,decommissioned,2015-03-16,2021-08-15,334960.0,Y-5UZGCDJFTQ,owned,False,ccc-3nb2v-lvmc4w
+truck,Mammoth Movers,Pixie Cruiser 3000,FCV2877,electric,under maintenance,2017-11-26,2020-02-11,234792.0,X-ERN78A8BIV,rented,False,cbc-tkclo-zq0cdj
+truck,Mammoth Movers,Pixie Cruiser 3000,VNV2181,electric,under maintenance,2012-12-26,2021-02-01,436700.0,Y-5UZGCDJFTQ,rented,False,ccc-ckf2u-pwb8gp
+truck,Mammoth Movers,Pixie Cruiser 3000,RVH7263,gasoline,under maintenance,2021-05-03,2022-08-26,103040.0,X-ERN78A8BIV,leased,False,ccc-yi5r6-drm0ih
+truck,Mammoth Movers,Pixie Cruiser 3000,YJN5697,diesel,decommissioned,2007-01-27,2022-01-07,698820.0,L-Y4LFNGHFTF,leased,True,cbc-xixid-icfcsk
+truck,Mammoth Movers,Pixie Cruiser 3000,XDK5530,electric,under maintenance,2016-09-05,2020-01-09,304036.0,Y-5UZGCDJFTQ,leased,False,cbc-g4crt-h67ckx
+truck,Mammoth Movers,Pixie Cruiser 3000,PTM9323,diesel,decommissioned,1998-10-01,2023-02-04,1082060.0,Y-5UZGCDJFTQ,leased,False,cdc-o4whr-hb6nhb
+truck,Mammoth Movers,PedalSprite Racer,EEJ1008,gasoline,under maintenance,1997-04-10,2021-04-05,1009736.0,X-PST1SA87JP,owned,False,ccc-tdiw5-wgfn9f
+truck,Mammoth Movers,PedalSprite Racer,JFQ1260,electric,under maintenance,2008-11-15,2022-05-21,580032.0,L-VFDKW4CZZE,rented,True,ccc-kdezt-v1ccmx
+truck,Mammoth Movers,PedalSprite Racer,WQG0246,gasoline,under maintenance,2005-08-25,2023-03-16,718200.0,X-CDOOP2OM6X,owned,False,cdc-iof3b-a5xigu
+truck,Mammoth Movers,CloudRider Lite,IKR0414,gasoline,active,2006-07-05,2023-04-27,671616.0,X-TOMBKLRCRP,owned,True,aba-ilflh-o0qakt
+truck,Mammoth Movers,CloudRider Lite,FXA6044,gasoline,under maintenance,2007-02-18,2023-07-17,659664.0,L-GUMMXT8Q1Z,leased,True,aba-5kpud-gicifj
+truck,Mammoth Movers,CloudRider Lite,WAT8392,gasoline,under maintenance,2020-05-18,2022-02-16,139700.0,X-ZNH63CQIER,leased,True,cdc-nylxt-saarbr
+truck,Mammoth Movers,CloudRider Lite,KYX6091,electric,decommissioned,2021-07-25,2023-09-10,93744.0,L-VDZI8V8HLZ,owned,False,cad-j255i-uixxyc
+truck,Mammoth Movers,CloudRider Lite,AIA3636,gasoline,under maintenance,2016-01-26,2020-03-21,324216.0,L-VFDKW4CZZE,leased,True,cad-j0oco-f4a1eb
+truck,Mammoth Movers,Urban Whirlwind,XJV6911,electric,decommissioned,2009-05-26,2020-05-01,549120.0,L-Y4LFNGHFTF,owned,True,aba-wrbw5-nj3aze
+truck,Mammoth Movers,Urban Whirlwind,QJP0654,electric,active,2022-03-23,2020-08-19,63176.0,L-Y4LFNGHFTF,rented,False,cdc-hepvx-1dw664
+truck,Mammoth Movers,Urban Whirlwind,GET7302,electric,active,2023-08-21,2021-07-17,8640.0,X-ZNH63CQIER,leased,False,aba-9zycx-v0tzwu
+truck,Mammoth Movers,SwiftSonic 1,ISN1251,diesel,under maintenance,2023-08-16,2021-08-19,9520.0,L-VDZI8V8HLZ,owned,False,aba-tbnfr-viumwh
+truck,Mammoth Movers,SwiftSonic 1,ESZ9181,gasoline,active,2006-07-19,2023-12-19,720708.0,Y-RXHIWAJEYG,rented,True,ccc-lbfyf-e6nq1j
+truck,Mammoth Movers,SwiftSonic 1,JZX0134,electric,under maintenance,2022-02-19,2021-02-08,72848.0,X-ERN78A8BIV,owned,False,cdc-ke1bi-nktpyr
+truck,Mammoth Movers,SwiftSonic 1,ZKL8794,electric,under maintenance,2015-06-20,2021-02-25,361552.0,L-VFDKW4CZZE,owned,True,cbc-rminu-c0ozka
+truck,Mammoth Movers,SwiftSonic 1,XAX0938,gasoline,active,2015-05-22,2021-05-25,371160.0,X-PST1SA87JP,owned,False,cbc-daqto-px3npx
+truck,Mammoth Movers,CometWhirl 20X,YNQ6702,gasoline,active,2001-01-02,2023-05-23,867984.0,Y-5UZGCDJFTQ,leased,False,cdc-emp7z-ecv5bt
+truck,Mammoth Movers,CometWhirl 20X,OHV2809,gasoline,decommissioned,1996-09-08,2021-02-26,1051838.0,L-VDZI8V8HLZ,rented,False,ccc-s0bib-ihx3rh
+truck,Mammoth Movers,CometWhirl 20X,EHM7587,diesel,active,2002-02-24,2021-09-01,856224.0,X-6YAEJUWDYV,owned,True,aba-vv6nk-zklpng
+truck,Mammoth Movers,AeroStreaker,FIH1124,diesel,under maintenance,2023-08-12,2023-04-10,9612.0,Y-RXHIWAJEYG,owned,True,cbc-cifjg-ch9qbg
+truck,Mammoth Movers,AeroStreaker,OVZ2976,gasoline,under maintenance,2018-07-01,2022-06-06,215270.0,L-VDZI8V8HLZ,leased,True,aba-7jlna-kw48wt
+truck,Mammoth Movers,AeroStreaker,JAM3582,electric,decommissioned,2017-08-24,2023-07-04,254016.0,L-VDZI8V8HLZ,leased,False,cbc-p6b9d-4lj4tq
+truck,Mammoth Movers,AeroStreaker,EYM8122,diesel,decommissioned,2017-11-21,2023-06-14,248406.0,X-CDOOP2OM6X,owned,True,cbc-dnzhh-fuhbtu
+truck,Mammoth Movers,AeroStreaker,LVH7769,electric,active,2009-07-26,2021-03-14,605404.0,L-GUMMXT8Q1Z,leased,True,cbc-xiufm-ladmww
+truck,Mammoth Movers,GlidePath Tourer,KJU7064,electric,under maintenance,2019-03-19,2021-12-21,176384.0,Y-5UZGCDJFTQ,leased,True,ccc-umij7-5fb16l
+truck,Mammoth Movers,GlidePath Tourer,FKO9013,diesel,under maintenance,2014-11-11,2020-10-22,348210.0,L-VDZI8V8HLZ,rented,True,cad-bgysc-ycf48r
+bicycle,PedalPixie Cycles,Titan T-1000,,,active,2015-03-02,2022-01-13,317400.0,X-ZNH63CQIER,leased,False,aba-1asrp-eotjdm
+bicycle,PedalPixie Cycles,Titan T-1000,,,active,2014-01-04,2023-06-22,366792.0,X-PST1SA87JP,owned,True,ccc-rmpao-quicer
+bicycle,PedalPixie Cycles,Titan T-1000,,,decommissioned,1996-09-21,2021-07-07,1030640.0,Y-5UZGCDJFTQ,leased,False,ccc-9hp94-lw1sej
+bicycle,PedalPixie Cycles,HaulMaster XL,,,decommissioned,1998-10-28,2022-02-04,914300.0,L-GUMMXT8Q1Z,owned,False,ccc-3ztff-rlcywq
+bicycle,PedalPixie Cycles,HaulMaster XL,,,active,2002-08-03,2021-03-17,792336.0,L-VFDKW4CZZE,owned,True,cbc-utvjw-ruj9eo
+bicycle,PedalPixie Cycles,Titan Bison,,,under maintenance,2009-06-03,2023-01-01,527200.0,L-VDZI8V8HLZ,rented,True,cad-ep35l-gzwtgz
+bicycle,PedalPixie Cycles,Titan Bison,,,under maintenance,2022-10-28,2020-06-11,38454.0,L-VDZI8V8HLZ,leased,True,cbc-ijfcx-ekvfq0
+bicycle,PedalPixie Cycles,Titan Bison,,,under maintenance,2007-01-20,2021-09-14,638248.0,L-VFDKW4CZZE,rented,True,cbc-gsj3w-wrpqe8
+bicycle,PedalPixie Cycles,Titan Bison,,,under maintenance,2017-09-05,2023-05-17,239136.0,Y-RXHIWAJEYG,owned,True,aba-ljm1o-7wn0vi
+bicycle,PedalPixie Cycles,Colossus Cargo,,,active,1997-10-18,2022-07-17,951800.0,Y-5UZGCDJFTQ,leased,True,cad-pmybe-uluxnd
+bicycle,PedalPixie Cycles,Colossus Cargo,,,decommissioned,2001-03-09,2020-01-15,844560.0,Y-5UZGCDJFTQ,leased,True,ccc-eyqqx-dn2z0n
+bicycle,PedalPixie Cycles,Pixie Cruiser 3000,,,under maintenance,1999-07-08,2022-08-17,889000.0,L-VFDKW4CZZE,rented,False,ccc-ni5gk-uix1pz
+bicycle,PedalPixie Cycles,Pixie Cruiser 3000,,,decommissioned,2008-08-02,2023-04-08,568854.0,X-TOMBKLRCRP,leased,False,ccc-fazbd-gkoyx0
+bicycle,PedalPixie Cycles,Pixie Cruiser 3000,,,under maintenance,2015-02-13,2020-12-18,331864.0,X-CDOOP2OM6X,leased,False,aba-2kxl6-rtdcm6
+bicycle,PedalPixie Cycles,Pixie Cruiser 3000,,,decommissioned,2011-02-07,2022-04-25,493748.0,Y-RXHIWAJEYG,rented,False,aba-0wfp2-fizwnd
+bicycle,PedalPixie Cycles,Pixie Cruiser 3000,,,under maintenance,1996-07-15,2020-04-21,1077624.0,L-VFDKW4CZZE,rented,True,ccc-bviqu-ss0f2j
+bicycle,PedalPixie Cycles,PedalSprite Racer,,,under maintenance,2022-05-09,2021-05-07,54900.0,X-PST1SA87JP,rented,False,cdc-55bub-ygoj0b
+bicycle,PedalPixie Cycles,PedalSprite Racer,,,under maintenance,1997-10-23,2020-10-04,970326.0,Y-5UZGCDJFTQ,rented,False,aba-lnaex-dgo3ao
+bicycle,PedalPixie Cycles,PedalSprite Racer,,,under maintenance,2002-04-13,2023-09-26,819520.0,X-TOMBKLRCRP,leased,True,ccc-ure38-bvp1a7
+bicycle,PedalPixie Cycles,CloudRider Lite,,,decommissioned,2003-09-07,2023-11-15,736800.0,X-ERN78A8BIV,rented,True,cbc-ggvc1-fhqqcg
+bicycle,PedalPixie Cycles,CloudRider Lite,,,active,2000-01-06,2021-09-28,888216.0,X-CDOOP2OM6X,owned,False,cad-8mypb-l9vuov
+bicycle,PedalPixie Cycles,CloudRider Lite,,,decommissioned,2011-06-23,2023-05-11,470288.0,Y-RXHIWAJEYG,owned,True,cbc-owfot-uqylwt
+bicycle,PedalPixie Cycles,CloudRider Lite,,,under maintenance,2003-12-07,2021-12-08,771362.0,Y-5UZGCDJFTQ,leased,False,aba-hxz1y-h2qhcr
+bicycle,PedalPixie Cycles,CloudRider Lite,,,under maintenance,2012-07-23,2022-03-02,445608.0,X-ZNH63CQIER,rented,True,cbc-aoidu-5ym8pz
+bicycle,PedalPixie Cycles,Urban Whirlwind,,,under maintenance,2007-01-26,2020-09-20,613100.0,X-PST1SA87JP,owned,False,ccc-f9uyx-drwyx0
+bicycle,PedalPixie Cycles,Urban Whirlwind,,,decommissioned,2019-07-22,2021-03-14,160242.0,L-VFDKW4CZZE,rented,False,cbc-ke7dm-3myvkk
+bicycle,PedalPixie Cycles,SwiftSonic 1,,,under maintenance,2013-11-02,2023-03-06,365900.0,L-VFDKW4CZZE,owned,True,aba-vkm9k-fp2zdn
+bicycle,PedalPixie Cycles,SwiftSonic 1,,,decommissioned,2014-06-18,2022-08-05,349962.0,X-TOMBKLRCRP,owned,False,aba-uwwzm-kgfxgr
+bicycle,PedalPixie Cycles,SwiftSonic 1,,,decommissioned,2017-01-20,2022-06-22,258336.0,X-TOMBKLRCRP,owned,True,cbc-onb2v-dgclve
+bicycle,PedalPixie Cycles,SwiftSonic 1,,,active,2016-01-22,2021-08-03,301888.0,X-CDOOP2OM6X,owned,True,aba-wl1jd-otfy8g
+bicycle,PedalPixie Cycles,SwiftSonic 1,,,under maintenance,2022-11-20,2023-08-02,38232.0,L-GUMMXT8Q1Z,owned,False,aba-hggfu-8uydof
+bicycle,PedalPixie Cycles,SwiftSonic 1,,,decommissioned,2016-08-11,2020-04-18,291060.0,X-CDOOP2OM6X,owned,True,ccc-bu4yl-qlyenw
+bicycle,PedalPixie Cycles,CometWhirl 20X,,,active,2009-10-22,2020-02-08,513100.0,X-ERN78A8BIV,rented,False,cad-b01wn-ptbhum
+bicycle,PedalPixie Cycles,CometWhirl 20X,,,active,2000-07-15,2022-08-22,868734.0,X-ERN78A8BIV,owned,True,ccc-km1pj-ma5fgy
+bicycle,PedalPixie Cycles,AeroStreaker,,,active,2016-03-03,2020-02-15,280700.0,Y-5UZGCDJFTQ,owned,False,aba-ty2zt-kyr3qd
+bicycle,PedalPixie Cycles,AeroStreaker,,,under maintenance,2016-11-01,2020-02-10,261528.0,X-ERN78A8BIV,owned,False,cbc-3lj36-wxmcqt
+bicycle,PedalPixie Cycles,AeroStreaker,,,active,2018-12-27,2020-12-20,184912.0,X-ERN78A8BIV,rented,False,cdc-ytbam-c1ioc9
+bicycle,PedalPixie Cycles,AeroStreaker,,,active,2019-03-18,2022-08-01,179882.0,Y-5UZGCDJFTQ,owned,True,cbc-e7r3p-v36x8d
+bicycle,PedalPixie Cycles,GlidePath Tourer,,,decommissioned,2002-04-06,2022-12-12,788700.0,X-6YAEJUWDYV,rented,True,cad-b6lcw-wogwag
+bicycle,PedalPixie Cycles,GlidePath Tourer,,,decommissioned,2020-09-15,2020-08-14,117300.0,L-VDZI8V8HLZ,rented,False,ccc-fzhed-ypi3u2
+bicycle,PedalPixie Cycles,GlidePath Tourer,,,under maintenance,2020-08-11,2023-08-11,123240.0,L-Y4LFNGHFTF,owned,False,cdc-kgdzr-0n2cax
+bicycle,RapidRider Bikes,Titan T-1000,,,active,1999-04-15,2021-01-09,951244.0,X-TOMBKLRCRP,leased,False,cdc-zkavo-wfqbz0
+bicycle,RapidRider Bikes,Titan T-1000,,,decommissioned,2000-07-23,2021-12-14,918972.0,X-6YAEJUWDYV,owned,True,aba-o8otz-thzwbk
+bicycle,RapidRider Bikes,Titan T-1000,,,under maintenance,2015-10-23,2020-04-01,323290.0,X-CDOOP2OM6X,leased,False,ccc-hlsyv-egbsja
+bicycle,RapidRider Bikes,HaulMaster XL,,,decommissioned,2007-08-20,2020-04-12,616200.0,L-GUMMXT8Q1Z,rented,False,cdc-pn5hf-mkbbss
+bicycle,RapidRider Bikes,HaulMaster XL,,,decommissioned,1998-04-25,2022-06-02,988874.0,Y-5UZGCDJFTQ,rented,False,cad-ez5lj-duf8i1
+bicycle,RapidRider Bikes,Titan Bison,,,under maintenance,2005-12-03,2022-11-12,707400.0,X-ERN78A8BIV,leased,True,ccc-qxtxc-ucdsyf
+bicycle,RapidRider Bikes,Titan Bison,,,decommissioned,2005-06-11,2022-11-20,739750.0,X-PST1SA87JP,leased,True,ccc-jaxuu-5osjey
+bicycle,RapidRider Bikes,Titan Bison,,,under maintenance,2005-04-21,2023-03-08,758912.0,L-VFDKW4CZZE,owned,True,cdc-u8bwb-qczngm
+bicycle,RapidRider Bikes,Titan Bison,,,decommissioned,1996-12-14,2020-06-13,1120164.0,X-ERN78A8BIV,owned,False,ccc-snf6k-m6t3m6
+bicycle,RapidRider Bikes,Colossus Cargo,,,under maintenance,2006-10-02,2022-11-19,649688.0,X-ERN78A8BIV,owned,True,cad-4xwww-bz3asf
+bicycle,RapidRider Bikes,Colossus Cargo,,,active,2001-02-18,2020-12-24,879694.0,Y-RXHIWAJEYG,rented,False,cdc-ixws9-tlkqem
+bicycle,RapidRider Bikes,Pixie Cruiser 3000,,,active,1996-01-10,2023-12-12,1118150.0,L-Y4LFNGHFTF,rented,True,cbc-m5re7-j6ptth
+bicycle,RapidRider Bikes,Pixie Cruiser 3000,,,under maintenance,2015-06-10,2022-04-08,344288.0,X-CDOOP2OM6X,owned,True,aba-rh9jk-9ne9td
+bicycle,RapidRider Bikes,Pixie Cruiser 3000,,,under maintenance,2004-10-27,2023-05-15,792528.0,L-VDZI8V8HLZ,owned,True,cbc-fmwat-rikxcu
+bicycle,RapidRider Bikes,PedalSprite Racer,,,active,2018-05-04,2021-01-08,213590.0,X-6YAEJUWDYV,leased,False,aba-dp76b-glfjl0
+bicycle,RapidRider Bikes,PedalSprite Racer,,,under maintenance,2019-09-07,2020-12-04,164592.0,L-VFDKW4CZZE,rented,False,cbc-lw65i-5g2uik
+bicycle,RapidRider Bikes,PedalSprite Racer,,,active,2004-04-12,2023-05-02,786500.0,L-VDZI8V8HLZ,leased,True,ccc-tw4dl-ysjcfh
+bicycle,RapidRider Bikes,CloudRider Lite,,,under maintenance,2002-01-03,2022-08-01,877800.0,L-GUMMXT8Q1Z,rented,True,ccc-nge1c-hqxcv4
+bicycle,RapidRider Bikes,CloudRider Lite,,,under maintenance,2002-05-22,2020-08-01,878192.0,Y-RXHIWAJEYG,owned,True,cad-uanzj-k92lpf
+bicycle,RapidRider Bikes,CloudRider Lite,,,decommissioned,2004-08-18,2021-09-11,800508.0,L-VFDKW4CZZE,rented,True,cdc-qsc8w-tgmn7j
+bicycle,RapidRider Bikes,Urban Whirlwind,,,decommissioned,2009-01-25,2020-09-23,561704.0,X-6YAEJUWDYV,owned,True,cbc-jdszx-umymad
+bicycle,RapidRider Bikes,Urban Whirlwind,,,active,1999-12-24,2020-06-21,924426.0,X-6YAEJUWDYV,rented,False,cbc-gr63q-mdcwgr
+bicycle,RapidRider Bikes,SwiftSonic 1,,,decommissioned,2002-03-13,2022-12-23,886032.0,Y-RXHIWAJEYG,leased,False,cdc-wku6n-xlyaot
+bicycle,RapidRider Bikes,SwiftSonic 1,,,active,2002-02-20,2021-08-11,904248.0,X-ERN78A8BIV,leased,True,cad-xz5lb-60veqc
+bicycle,RapidRider Bikes,SwiftSonic 1,,,decommissioned,2008-09-17,2022-09-18,641596.0,L-VDZI8V8HLZ,rented,True,ccc-zpxyy-x2lsdf
+bicycle,RapidRider Bikes,SwiftSonic 1,,,under maintenance,2011-03-28,2021-03-12,543862.0,Y-5UZGCDJFTQ,rented,False,cad-b5e9q-wug0w3
+bicycle,RapidRider Bikes,CometWhirl 20X,,,decommissioned,2013-09-19,2023-09-27,385112.0,X-ZNH63CQIER,rented,True,ccc-e89zt-jhmpav
+bicycle,RapidRider Bikes,CometWhirl 20X,,,decommissioned,2001-11-16,2020-07-15,850968.0,L-VFDKW4CZZE,leased,False,cbc-vupb9-nmwqql
+bicycle,RapidRider Bikes,AeroStreaker,,,active,2021-03-11,2021-06-11,105084.0,L-GUMMXT8Q1Z,owned,True,aba-qaqsr-akyreh
+bicycle,RapidRider Bikes,AeroStreaker,,,active,2014-10-12,2021-10-15,364650.0,L-Y4LFNGHFTF,leased,False,cdc-hkw0v-czyoy6
+bicycle,RapidRider Bikes,AeroStreaker,,,active,2020-08-01,2023-03-28,133840.0,Y-RXHIWAJEYG,rented,False,cbc-tx60s-1btiiy
+bicycle,RapidRider Bikes,AeroStreaker,,,decommissioned,2018-07-09,2023-01-11,222186.0,L-Y4LFNGHFTF,leased,True,cad-mxtis-wl55el
+bicycle,RapidRider Bikes,AeroStreaker,,,active,2004-12-26,2020-12-14,799472.0,X-TOMBKLRCRP,leased,True,cad-hfcgm-3nxsqe
+bicycle,RapidRider Bikes,GlidePath Tourer,,,under maintenance,2012-08-08,2023-08-09,435660.0,X-CDOOP2OM6X,rented,True,cdc-61cd8-c7fbms
+bicycle,RapidRider Bikes,GlidePath Tourer,,,under maintenance,2011-02-18,2020-07-02,501876.0,L-GUMMXT8Q1Z,rented,False,aba-avnyd-ltp7y7
+drone,SkySwift Technologies,Titan T-1000,,,active,1998-07-10,2021-09-03,925300.0,L-VDZI8V8HLZ,leased,False,ccc-q73fy-mpsf1c
+drone,SkySwift Technologies,Titan T-1000,,,under maintenance,2000-07-20,2020-10-12,868224.0,X-PST1SA87JP,owned,True,cdc-6agng-gu1g6r
+drone,SkySwift Technologies,Titan T-1000,,,under maintenance,2001-09-26,2022-01-10,840216.0,X-CDOOP2OM6X,rented,False,cdc-p5wjd-k5enux
+drone,SkySwift Technologies,Titan T-1000,,,decommissioned,2004-01-08,2023-10-11,767970.0,Y-5UZGCDJFTQ,rented,True,cad-xprfu-oqjv4q
+drone,SkySwift Technologies,HaulMaster XL,,,active,2019-10-08,2021-11-05,149300.0,X-PST1SA87JP,owned,False,aba-xw2zl-mhfwv3
+drone,SkySwift Technologies,HaulMaster XL,,,active,2022-10-19,2023-11-16,39372.0,X-ZNH63CQIER,rented,True,cbc-097cd-8plw6j
+drone,SkySwift Technologies,Titan Bison,,,under maintenance,2002-05-02,2021-09-28,786100.0,L-VFDKW4CZZE,owned,True,aba-0gfl6-ptr1gg
+drone,SkySwift Technologies,Titan Bison,,,under maintenance,2021-08-15,2023-10-04,83232.0,L-VDZI8V8HLZ,owned,False,ccc-stpqu-z9fk50
+drone,SkySwift Technologies,Titan Bison,,,decommissioned,2017-02-16,2022-07-03,255528.0,L-VDZI8V8HLZ,rented,True,cad-4dhvd-87ljtl
+drone,SkySwift Technologies,Titan Bison,,,active,2002-10-05,2022-05-11,816730.0,X-6YAEJUWDYV,leased,False,ccc-tc8rf-6rmw42
+drone,SkySwift Technologies,Titan Bison,,,under maintenance,2015-08-22,2021-08-08,324108.0,X-ERN78A8BIV,owned,False,cdc-3wqqu-hl8ogw
+drone,SkySwift Technologies,Titan Bison,,,active,2022-10-06,2022-07-27,43890.0,X-ERN78A8BIV,owned,True,ccc-xv0k6-z71fex
+drone,SkySwift Technologies,Colossus Cargo,,,decommissioned,1999-04-09,2022-07-23,898000.0,X-PST1SA87JP,owned,True,aba-ugt7z-azwqnq
+drone,SkySwift Technologies,Colossus Cargo,,,decommissioned,2021-09-27,2021-08-22,78846.0,L-GUMMXT8Q1Z,owned,False,cbc-qcymb-qxhjpw
+drone,SkySwift Technologies,Pixie Cruiser 3000,,,active,2011-05-03,2021-02-06,457300.0,Y-RXHIWAJEYG,leased,False,aba-u1aos-ewwsct
+drone,SkySwift Technologies,Pixie Cruiser 3000,,,under maintenance,2002-02-17,2020-03-02,809370.0,Y-5UZGCDJFTQ,owned,True,ccc-latic-wattha
+drone,SkySwift Technologies,Pixie Cruiser 3000,,,under maintenance,2022-11-11,2022-05-21,37752.0,X-TOMBKLRCRP,leased,False,cdc-pdxpb-v7tl2g
+drone,SkySwift Technologies,PedalSprite Racer,,,decommissioned,1999-04-15,2023-02-03,897400.0,X-TOMBKLRCRP,leased,False,aba-pj1mp-t6i69y
+drone,SkySwift Technologies,PedalSprite Racer,,,under maintenance,2011-09-05,2022-08-24,453696.0,L-VFDKW4CZZE,leased,True,cad-oauib-uuan1w
+drone,SkySwift Technologies,CloudRider Lite,,,under maintenance,2002-11-05,2022-01-25,767400.0,X-TOMBKLRCRP,leased,False,aba-qxpfj-fnz3k4
+drone,SkySwift Technologies,CloudRider Lite,,,decommissioned,2007-02-03,2021-10-16,624546.0,Y-RXHIWAJEYG,owned,True,cbc-myfvr-xowvhh
+drone,SkySwift Technologies,CloudRider Lite,,,decommissioned,1996-07-04,2023-03-21,1038856.0,Y-RXHIWAJEYG,leased,True,cdc-9whz6-ewso5t
+drone,SkySwift Technologies,CloudRider Lite,,,decommissioned,2013-06-01,2020-03-19,404178.0,X-ERN78A8BIV,leased,True,cbc-3enyd-e7mtb5
+drone,SkySwift Technologies,CloudRider Lite,,,active,2017-08-28,2021-08-10,244512.0,X-6YAEJUWDYV,rented,True,cbc-iretk-quz9oi
+drone,SkySwift Technologies,CloudRider Lite,,,active,2023-11-09,2023-01-08,0.0,X-6YAEJUWDYV,leased,False,cbc-h1vgh-eoyztu
+drone,SkySwift Technologies,Urban Whirlwind,,,under maintenance,2023-08-06,2020-07-09,9500.0,Y-RXHIWAJEYG,rented,False,cad-wn8n2-emlgqk
+drone,SkySwift Technologies,Urban Whirlwind,,,under maintenance,2018-12-11,2022-07-14,182988.0,Y-5UZGCDJFTQ,leased,False,ccc-ip41h-piurgt
+drone,SkySwift Technologies,Urban Whirlwind,,,under maintenance,2006-09-05,2021-01-05,652496.0,L-VFDKW4CZZE,owned,False,ccc-nfaec-lgbzav
+drone,SkySwift Technologies,SwiftSonic 1,,,decommissioned,1997-12-01,2021-10-22,947400.0,X-6YAEJUWDYV,rented,False,cdc-rjifu-mybohg
+drone,SkySwift Technologies,SwiftSonic 1,,,under maintenance,2009-09-25,2022-11-06,526116.0,X-ZNH63CQIER,leased,False,cad-azrdr-bckzly
+drone,SkySwift Technologies,SwiftSonic 1,,,decommissioned,1996-05-04,2022-06-23,1045200.0,L-GUMMXT8Q1Z,owned,True,ccc-cjtvv-fcdfan
+drone,SkySwift Technologies,SwiftSonic 1,,,decommissioned,1999-06-17,2023-01-27,944566.0,Y-RXHIWAJEYG,rented,True,aba-kyrx7-h8sgpq
+drone,SkySwift Technologies,SwiftSonic 1,,,active,2012-01-24,2020-05-24,465156.0,X-ZNH63CQIER,leased,True,cdc-0389i-aozboq
+drone,SkySwift Technologies,SwiftSonic 1,,,active,1997-10-05,2023-01-25,1048410.0,L-Y4LFNGHFTF,owned,True,ccc-d0nor-zpqj0q
+drone,SkySwift Technologies,CometWhirl 20X,,,active,2001-05-23,2020-08-16,820500.0,X-6YAEJUWDYV,leased,True,cbc-7vt3u-zu8hif
+drone,SkySwift Technologies,CometWhirl 20X,,,active,1999-03-14,2020-10-18,918612.0,X-CDOOP2OM6X,rented,True,cad-sweja-ufhote
+drone,SkySwift Technologies,CometWhirl 20X,,,active,1999-03-13,2022-06-11,936728.0,X-ZNH63CQIER,leased,True,cbc-pfols-ht4zvn
+drone,SkySwift Technologies,AeroStreaker,,,active,2006-09-24,2020-06-10,625500.0,L-VDZI8V8HLZ,owned,True,cad-divau-xhq8es
+drone,SkySwift Technologies,AeroStreaker,,,active,2023-01-01,2022-07-24,31824.0,X-6YAEJUWDYV,owned,True,ccc-uldoh-4pps7m
+drone,SkySwift Technologies,AeroStreaker,,,under maintenance,2003-05-05,2023-06-03,779272.0,X-CDOOP2OM6X,rented,False,cad-7rnqu-iwband
+drone,SkySwift Technologies,AeroStreaker,,,active,1998-04-16,2021-04-16,989828.0,X-ZNH63CQIER,owned,True,aba-piv1m-xkimrf
+drone,SkySwift Technologies,GlidePath Tourer,,,under maintenance,2009-02-20,2023-01-17,537500.0,X-TOMBKLRCRP,owned,False,aba-5aljr-tl5tms
+drone,SkySwift Technologies,GlidePath Tourer,,,under maintenance,2019-04-07,2022-12-12,171054.0,X-TOMBKLRCRP,owned,True,ccc-kz7so-fmjozu
+drone,AeroPulse Drones,Titan T-1000,,,under maintenance,2016-09-12,2022-10-04,282312.0,L-GUMMXT8Q1Z,owned,False,cdc-27sfq-l5n9jg
+drone,AeroPulse Drones,Titan T-1000,,,decommissioned,2019-06-03,2023-07-09,178200.0,X-ERN78A8BIV,rented,False,cdc-v8jq0-k9en4r
+drone,AeroPulse Drones,Titan T-1000,,,decommissioned,2002-01-20,2023-09-20,891856.0,Y-RXHIWAJEYG,rented,True,aba-29w6q-ol9ydn
+drone,AeroPulse Drones,Titan T-1000,,,under maintenance,2007-03-08,2023-10-12,694260.0,L-VDZI8V8HLZ,owned,False,cad-tjzbj-jrdx4d
+drone,AeroPulse Drones,Titan T-1000,,,active,2015-06-04,2023-10-23,357280.0,Y-RXHIWAJEYG,rented,True,aba-wmmsa-5domuj
+drone,AeroPulse Drones,HaulMaster XL,,,active,2018-07-19,2023-12-18,201656.0,Y-RXHIWAJEYG,rented,False,ccc-czv2e-ulstnw
+drone,AeroPulse Drones,HaulMaster XL,,,under maintenance,2002-10-20,2022-08-15,815140.0,L-VFDKW4CZZE,owned,False,cbc-c6kf9-hyc2nf
+drone,AeroPulse Drones,HaulMaster XL,,,under maintenance,2001-09-10,2020-05-18,874260.0,L-GUMMXT8Q1Z,leased,False,aba-fkngi-ot811d
+drone,AeroPulse Drones,Titan Bison,,,decommissioned,2017-12-01,2022-09-13,242928.0,Y-5UZGCDJFTQ,leased,False,cad-ghgvd-arjd6u
+drone,AeroPulse Drones,Titan Bison,,,active,2015-04-06,2023-03-01,357846.0,X-6YAEJUWDYV,leased,False,cbc-bvml2-klo5ps
+drone,AeroPulse Drones,Titan Bison,,,active,2000-11-21,2023-10-08,973008.0,L-GUMMXT8Q1Z,owned,True,cdc-4i4u1-g6w7ta
+drone,AeroPulse Drones,Titan Bison,,,under maintenance,2014-10-28,2022-11-17,389282.0,X-TOMBKLRCRP,owned,False,ccc-oz2ug-nnhdju
+drone,AeroPulse Drones,Colossus Cargo,,,decommissioned,2023-10-11,2020-01-26,3016.0,L-VDZI8V8HLZ,owned,True,cbc-j2wjg-rjs1ey
+drone,AeroPulse Drones,Colossus Cargo,,,decommissioned,2009-03-06,2022-12-26,568266.0,X-ERN78A8BIV,leased,False,aba-l44qz-oz9bpz
+drone,AeroPulse Drones,Pixie Cruiser 3000,,,decommissioned,2001-03-13,2021-01-22,877256.0,L-VDZI8V8HLZ,owned,True,cbc-5sxg5-vn5az7
+drone,AeroPulse Drones,Pixie Cruiser 3000,,,active,1997-02-18,2022-11-12,1054080.0,X-6YAEJUWDYV,owned,False,cad-cdlbq-lkkd8p
+drone,AeroPulse Drones,Pixie Cruiser 3000,,,under maintenance,1997-08-05,2021-06-08,1055120.0,L-Y4LFNGHFTF,rented,True,cdc-tcm8j-yb90gs
+drone,AeroPulse Drones,Pixie Cruiser 3000,,,under maintenance,2001-12-05,2021-08-28,897008.0,L-VFDKW4CZZE,owned,False,cad-uzl0i-yydnll
+drone,AeroPulse Drones,Pixie Cruiser 3000,,,decommissioned,2022-08-05,2021-12-06,52554.0,X-TOMBKLRCRP,rented,False,cad-etme2-l1bizh
+drone,AeroPulse Drones,PedalSprite Racer,,,under maintenance,2007-02-19,2021-09-10,635128.0,L-VDZI8V8HLZ,rented,True,aba-7p48s-2xidy9
+drone,AeroPulse Drones,PedalSprite Racer,,,active,2007-10-07,2023-02-22,622962.0,X-PST1SA87JP,leased,True,cbc-lsml3-ffhumg
+drone,AeroPulse Drones,CloudRider Lite,,,decommissioned,2010-07-15,2022-02-04,544880.0,X-ZNH63CQIER,leased,False,aba-oelsq-x0u9mc
+drone,AeroPulse Drones,CloudRider Lite,,,active,2001-01-11,2021-03-09,950418.0,X-6YAEJUWDYV,owned,True,ccc-oaibp-7wojih
+drone,AeroPulse Drones,CloudRider Lite,,,under maintenance,2001-03-11,2022-03-05,960248.0,X-PST1SA87JP,rented,False,cbc-3xsut-cnhs1a
+drone,AeroPulse Drones,CloudRider Lite,,,decommissioned,2011-11-28,2020-08-05,514952.0,X-PST1SA87JP,leased,True,ccc-zxde6-krlib1
+drone,AeroPulse Drones,Urban Whirlwind,,,decommissioned,1999-11-28,2020-11-18,927182.0,Y-5UZGCDJFTQ,owned,True,cbc-32s2k-xv8azn
+drone,AeroPulse Drones,Urban Whirlwind,,,under maintenance,2021-08-02,2021-03-04,89532.0,L-VDZI8V8HLZ,rented,True,ccc-49ala-t6huec
+drone,AeroPulse Drones,Urban Whirlwind,,,decommissioned,2014-11-16,2021-10-11,360800.0,X-ZNH63CQIER,rented,False,ccc-odx3m-avwukg
+drone,AeroPulse Drones,SwiftSonic 1,,,under maintenance,2004-07-02,2022-03-05,791728.0,L-VDZI8V8HLZ,owned,False,ccc-qhacz-zcomzi
+drone,AeroPulse Drones,SwiftSonic 1,,,active,2002-09-16,2021-06-16,880536.0,L-VFDKW4CZZE,rented,False,cdc-nqp62-fxnjfc
+drone,AeroPulse Drones,SwiftSonic 1,,,under maintenance,1999-12-07,2021-01-16,1013608.0,L-Y4LFNGHFTF,owned,False,cad-tvgfi-m9gkch
+drone,AeroPulse Drones,SwiftSonic 1,,,active,2012-07-02,2021-04-03,489346.0,X-6YAEJUWDYV,leased,False,cad-wssci-0y3pgp
+drone,AeroPulse Drones,SwiftSonic 1,,,decommissioned,2022-04-16,2022-05-20,68640.0,L-GUMMXT8Q1Z,owned,False,ccc-bckg3-8o6eej
+drone,AeroPulse Drones,CometWhirl 20X,,,decommissioned,2022-10-23,2021-01-20,40492.0,Y-5UZGCDJFTQ,rented,True,ccc-hrnqz-mwyqpi
+drone,AeroPulse Drones,CometWhirl 20X,,,active,2016-10-11,2023-05-22,279180.0,X-ZNH63CQIER,rented,False,aba-dy7bd-xgiabs
+drone,AeroPulse Drones,AeroStreaker,,,decommissioned,2007-07-19,2020-06-12,643356.0,X-6YAEJUWDYV,owned,False,cad-fpcij-taefgi
+drone,AeroPulse Drones,AeroStreaker,,,active,2012-05-25,2020-11-05,460350.0,Y-RXHIWAJEYG,owned,False,cad-eck5u-azutvo
+drone,AeroPulse Drones,AeroStreaker,,,under maintenance,2015-02-07,2020-07-21,358064.0,X-PST1SA87JP,rented,False,ccc-zawfh-8npnxh
+drone,AeroPulse Drones,AeroStreaker,,,active,2021-02-28,2020-11-06,112176.0,Y-RXHIWAJEYG,owned,True,ccc-hlbo1-h8yekc
+drone,AeroPulse Drones,AeroStreaker,,,active,2000-01-10,2022-11-05,1009664.0,L-VDZI8V8HLZ,rented,True,cad-4apsu-jn9cci
+drone,AeroPulse Drones,AeroStreaker,,,decommissioned,2018-07-12,2020-10-09,229628.0,L-VDZI8V8HLZ,leased,False,aba-xuvkr-f4luwm
+drone,AeroPulse Drones,GlidePath Tourer,,,decommissioned,2006-08-04,2023-11-02,655824.0,L-VFDKW4CZZE,rented,False,aba-wdbmo-vhlfnr
+drone,AeroPulse Drones,GlidePath Tourer,,,under maintenance,2011-10-18,2022-02-15,466930.0,L-VFDKW4CZZE,rented,False,cad-hlfmj-ioexuq

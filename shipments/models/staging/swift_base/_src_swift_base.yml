@@ -1,0 +1,9 @@
+sources:
+    - name: swift_base
+      database: analytics
+      schema: dbt_swift_base
+      tables:
+        - name: customers
+          identifier: customers
+        - name: businesses
+          identifier: recorded_businesses__cs

@@ -1,0 +1,7 @@
+sources:
+    - name: swift_transactions
+      database: analytics
+      schema: dbt_swift_transactions
+      tables:
+        - name: shipments
+          identifier: cc1_swft_shipments_X123
