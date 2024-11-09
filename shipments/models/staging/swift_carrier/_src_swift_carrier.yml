@@ -1,0 +1,9 @@
+sources:
+    - name: swift_carrier
+      database: analytics
+      schema: dbt_swift_carrier
+      tables:
+        - name: drivers
+          identifier: drivers
+        - name: vehicles
+          identifier: vehicle_information
