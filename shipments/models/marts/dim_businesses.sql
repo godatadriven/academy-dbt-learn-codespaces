@@ -1,4 +1,4 @@
-businesses as (
+with businesses as (
     select * from {{ref("base_swift_base_businesses") }}
 )
 

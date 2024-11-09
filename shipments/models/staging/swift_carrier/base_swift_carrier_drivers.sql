@@ -3,8 +3,8 @@ with source as (
 ),
 renamed as (
     select
-        driver,
         driver_id,
+        driver as driver_full_name,
         first_name,
         last_name,
         birth_date,

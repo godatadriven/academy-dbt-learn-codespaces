@@ -3,19 +3,19 @@ with source as (
 ),
 renamed as (
     select
+        vehicle_id,
         vehicle_type,
         manufacturer,
         model,
         license_plate,
         fuel_type,
-        status,
+        status as vehicle_status,
         purchase_date,
         last_service_date,
         mileage,
         location_id,
-        ownership,
-        gps_tracking_enabled,
-        vehicle_id
+        ownership as vehicle_ownership,
+        gps_tracking_enabled
 
     from source
 )

@@ -15,7 +15,7 @@ renamed as (
         locatie_gegevens_continent,
         vehicle_id,
         invoicing_f_code_paid_date_confirmed,
-        z_list_price,
+        round(z_list_price, 2) as z_list_price,
         wgtkg_123x,
         dimension_package_for_shipment,
         driver_id,

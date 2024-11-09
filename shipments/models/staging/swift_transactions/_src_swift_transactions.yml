@@ -1,7 +1,25 @@
 sources:
-    - name: swift_transactions
-      database: analytics
-      schema: dbt_swift_transactions
-      tables:
-        - name: shipments
-          identifier: cc1_swft_shipments_X123
+  - name: swift_transactions
+    database: analytics
+    schema: dbt_swift_transactions
+    tables:
+      - name: shipments
+        identifier: cc1_swft_shipments_X123
+        columns: 
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+              - accepted_values:
+                  values: [1,2]
+      - name: dim_shipment_type_january
+      - name: dim_shipment_type_february
+      - name: dim_shipment_type_march
+      - name: dim_shipment_type_april
+      - name: dim_shipment_type_may
+      - name: dim_shipment_type_june
+      - name: dim_shipment_type_july
+      - name: dim_shipment_type_august
+      - name: dim_shipment_type_september
+      - name: dim_shipment_type_october
+      - name: dim_shipment_type_november

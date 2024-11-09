@@ -3,10 +3,10 @@ with source as (
 ),
 renamed as (
     select
-        id,
-        name,
-        address,
-        country,
+        id as business_id,
+        name as business_name,
+        address as business_address,
+        country as business_country,
 
     from source
 )
