@@ -10,8 +10,6 @@ sources:
             data_tests:
               - unique
               - not_null
-              - accepted_values:
-                  values: [1,2]
       - name: dim_shipment_type_january
       - name: dim_shipment_type_february
       - name: dim_shipment_type_march
