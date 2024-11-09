@@ -4,6 +4,10 @@ Welcome to the **Shipments DBT Project**! In this project, you will work as a da
 taking on a series of tasks to improve and optimize the data models in the shipments domain. This project is designed 
 to help you practice data modeling techniques, SQL, and dbt best practices while working with real-world shipment data.
 
+## Data overview
+
+You can find more information about the data in the [data-dictionaries/](0-exercises/data-dictionaries) folder
+
 ## Project Overview
 
 The goal of the **Shipments dbt Project** is to model and transform data from various sources related to shipment transactions. 
