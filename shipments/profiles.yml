@@ -3,11 +3,11 @@ dbt_modeling_xebia_training:
     dev:
       account: fka50167
       database: analytics
-      password: <fill-me>
       role: Transformer
-      schema: <choose-a-name>
       threads: 4
       type: snowflake
-      user: <fill-me>
       warehouse: transforming
+      user: <fill-me>
+      password: <fill-me>
+      schema: <choose-a-name>
   target: dev
