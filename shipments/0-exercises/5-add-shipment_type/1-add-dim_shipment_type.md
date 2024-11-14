@@ -5,12 +5,14 @@
 Every month price per kg is reviewed and changed if necessary. This is used to determine the price of shipping 
 where $ \text{list\_price} = \text{weight\_in\_kg} \times \text{price\_per\_kg} $
 
+`list_price = weight_in_kg x price_per_kg`
+
 ### Issue
 
 The analysis team are checking whether the shipment price is correct by joining the monthly price_per_kg to the fct_shipments table and 
 re-calculating the list price. This should match the field that already exists. 
 
-The code (which you can find here: analysis-shipment-type-price-check.sql) can be simplified as right now it requires multiple union all statements (or joins)
+The code (which you can find here: `check_prices_based_on_strategy.sql`) can be simplified as right now it requires multiple union all statements (or joins)
 
 The team is requesting a table to be in the warehouse which contains the monthly prices so that their analysis is more simple
 
