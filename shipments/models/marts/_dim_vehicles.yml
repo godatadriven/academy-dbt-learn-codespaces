@@ -54,6 +54,9 @@ models:
       - name: vehicle_ownership
         data_type: varchar
         description: ""
+        data_tests:
+          - accepted_values:
+              values: ['owned','rented','leased']
 
       - name: gps_tracking_enabled
         data_type: boolean
