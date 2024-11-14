@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_orders
+    data_tests:
+      - dbt_utils.expression_is_true:
+          expression: "order_amount >= 0"
+    columns: 
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
