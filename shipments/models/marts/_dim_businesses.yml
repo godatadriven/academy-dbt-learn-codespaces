@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: dim_businesses
+    description: ""
+    columns:
+      - name: business_id_sk
+        data_type: varchar
+        description: ""
+        data_tests:
+          - unique
+          - not_null
+
+      - name: business_id
+        data_type: number
+        description: ""
+
+      - name: business_name
+        data_type: varchar
+        description: ""
+
+      - name: business_address
+        data_type: varchar
+        description: ""
+
+      - name: business_country
+        data_type: varchar
+        description: ""

@@ -1,0 +1,92 @@
+version: 2
+
+models:
+  - name: fct_shipments
+    description: ""
+    columns:
+      - name: transaction_id
+        data_type: number
+        description: ""
+        data_tests:
+          - unique
+          - not_null
+
+      - name: location_code
+        data_type: varchar
+        description: ""
+
+      - name: send_date
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: transaction_status
+        data_type: varchar
+        description: ""
+
+      - name: customer_id
+        data_type: number
+        description: ""
+
+      - name: invoice_id
+        data_type: number
+        description: ""
+
+      - name: customer_id_business_held_confirmed
+        data_type: number
+        description: ""
+
+      - name: receive_date
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: label_creation_date
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: location_region_code
+        data_type: varchar
+        description: ""
+
+      - name: vehicle_id
+        data_type: varchar
+        description: ""
+
+      - name: invoicing_f_code_paid_date_confirmed
+        data_type: number
+        description: ""
+
+      - name: list_price
+        data_type: float
+        description: ""
+
+      - name: shipment_weight_kgs
+        data_type: float
+        description: ""
+
+      - name: package_dimension
+        data_type: varchar
+        description: ""
+
+      - name: driver_id
+        data_type: varchar
+        description: ""
+
+      - name: invoice_date
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: invoice_status
+        data_type: varchar
+        description: ""
+
+      - name: shipment_type_id
+        data_type: number
+        description: ""
+
+      - name: incomplete_invoice_id
+        data_type: number
+        description: ""
+
+      - name: customer_business_id
+        data_type: varchar
+        description: ""

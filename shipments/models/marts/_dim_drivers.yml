@@ -1,0 +1,51 @@
+
+version: 2
+
+models:
+  - name: dim_drivers
+    description: ""
+    columns:
+      - name: driver_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - unique
+          - not_null
+              
+              
+
+      - name: driver_full_name
+        data_type: varchar
+        description: ""
+
+      - name: first_name
+        data_type: varchar
+        description: ""
+
+      - name: last_name
+        data_type: varchar
+        description: ""
+
+      - name: birth_date
+        data_type: date
+        description: ""
+
+      - name: license_id
+        data_type: varchar
+        description: ""
+
+      - name: license_expiry
+        data_type: date
+        description: ""
+
+      - name: hire_date
+        data_type: date
+        description: ""
+
+      - name: termination_date
+        data_type: date
+        description: ""
+
+      - name: email_address
+        data_type: varchar
+        description: ""

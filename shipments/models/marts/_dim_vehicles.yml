@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: dim_vehicles
+    description: ""
+    columns:
+      - name: vehicle_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - unique
+          - not_null
+              
+      - name: vehicle_type
+        data_type: varchar
+        description: ""
+
+      - name: manufacturer
+        data_type: varchar
+        description: ""
+
+      - name: model
+        data_type: varchar
+        description: ""
+
+      - name: license_plate
+        data_type: varchar
+        description: ""
+
+      - name: fuel_type
+        data_type: varchar
+        description: ""
+
+      - name: vehicle_status
+        data_type: varchar
+        description: ""
+
+      - name: purchase_date
+        data_type: date
+        description: ""
+
+      - name: last_service_date
+        data_type: date
+        description: ""
+
+      - name: mileage
+        data_type: number
+        description: ""
+
+      - name: location_id
+        data_type: varchar
+        description: ""
+
+      - name: vehicle_ownership
+        data_type: varchar
+        description: ""
+
+      - name: gps_tracking_enabled
+        data_type: boolean
+        description: ""
