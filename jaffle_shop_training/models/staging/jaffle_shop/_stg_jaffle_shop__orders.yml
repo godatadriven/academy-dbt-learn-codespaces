@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_jaffle_shop__orders
+    description: 'One record represents one jaffle order'
+    columns:
+      - name: status
+        description: '{{ doc("order_status") }}'
+        data_tests:
+          - accepted_values:
+              values:
+                - placed
+                - shipped
+                - completed
+                - returned
+                - return_pending
