@@ -28,6 +28,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
-models:
+models:  
   jaffle_shop_training:
-    # Config indicated by + and applies to all files under models/example/
+    marts:
+      +materialized: table
+    staging:
+      +materialized: view
