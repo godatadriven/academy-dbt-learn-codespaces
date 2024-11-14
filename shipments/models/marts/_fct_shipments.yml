@@ -3,6 +3,13 @@ version: 2
 models:
   - name: fct_shipments
     description: ""
+    data_tests:
+      - dbt_utils.expression_is_true:
+          expression: "round((list_price / shipment_weight_kgs),0) = price_per_kg"
+          config:
+            severity: error
+            error_if: '> 100'
+            warn_if: '> 0'
     columns:
       - name: transaction_id
         data_type: number
