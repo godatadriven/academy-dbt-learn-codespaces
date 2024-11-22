@@ -3,7 +3,11 @@ with customers as (
 ),
 create_primary_key as (
     select
-    {{ dbt_utils.generate_surrogate_key(['customer_id','first_name','last_name','city','email'])}} as customer_id_sk,*
+    {{ dbt_utils.generate_surrogate_key(['first_name','last_name','city','email'])}} as customer_id,
+    first_name,
+    last_name,
+    city,
+    email,
     from customers
 )
 

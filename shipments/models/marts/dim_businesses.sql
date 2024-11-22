@@ -3,8 +3,10 @@ with businesses as (
 ),
 create_primary_key as (
     select
-        {{ dbt_utils.generate_surrogate_key(['business_id','business_name','business_address','business_country'])}} as business_id_sk,
-        *
+        {{ dbt_utils.generate_surrogate_key(['business_name','business_address','business_country'])}} as business_id,
+        business_name,
+        business_address,
+        business_country,
     from businesses
 )
 
