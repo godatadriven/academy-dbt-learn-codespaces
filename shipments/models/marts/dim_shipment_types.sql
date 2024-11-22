@@ -5,7 +5,7 @@ with
 union_stategy_price as (
     {% for num, name in zip(nums, names) %}
         select *,
-            {{num}} as {{name}}
+            {{num}} as month
     from {{ ref('stg_swift_transactions__dim_shipment_type_' ~ name) }}
     {% if not loop.last %}
     union all
