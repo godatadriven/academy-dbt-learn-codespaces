@@ -12,7 +12,7 @@ easily filter or segment shipments based on whether they were made by employees 
 
 1. **Create the Seed File**:
 
-   In your dbt project directory, create a folder called `data/` if it doesn't already exist. Inside this folder, create a file called `employee_emails.csv` with the following contents:
+   In your dbt project directory, create a folder called `seeds/` if it doesn't already exist. Inside this folder, create a file called `employee_emails.csv` with the following contents:
 
    ```csv
    email
