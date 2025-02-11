@@ -3,11 +3,11 @@ my_new_project:
     dev:
       account: fka50167
       database: analytics
-      password: <fill-me-in>
       role: Transformer
-      schema: <fill-me-in>
       threads: 4
       type: snowflake
-      user: <fill-me-in>
       warehouse: transforming
+      user: <fill-me-in>
+      password: <fill-me-in>
+      schema: <fill-me-in>
   target: dev
