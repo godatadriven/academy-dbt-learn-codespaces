@@ -3,6 +3,7 @@ Welcome to dbt training!
 This repository contains two projects:
 - the Jaffle data to explore and understand the fundamentals of dbt
 - the Shipments data to explore data modeling concepts in real world setting
+- A new line
 
 ## Overview
 This training session is designed to provide a comprehensive understanding 
