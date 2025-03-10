@@ -1,4 +1,4 @@
-my_new_project:
+dbt_modeling_xebia_training:
   outputs:
     dev:
       account: fka50167
@@ -7,7 +7,7 @@ my_new_project:
       threads: 4
       type: snowflake
       warehouse: transforming
-      user: <fill-me-in>
-      password: <fill-me-in>
-      schema: <fill-me-in>
+      user: <fill-me>
+      password: <fill-me>
+      schema: <choose-a-name>
   target: dev

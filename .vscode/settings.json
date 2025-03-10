@@ -4,4 +4,11 @@
         "*.yml": "jinja-yaml",
         "*.sql": "jinja-sql",
         "*.md": "jinja-md"
+    },
+
+    "markdown.preview.openMarkdownLinks": "inPreview",
+    "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+}
+
 }
