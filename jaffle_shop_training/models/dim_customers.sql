@@ -1,3 +1,5 @@
+-- changes
+
 with customers as (
 
     select
