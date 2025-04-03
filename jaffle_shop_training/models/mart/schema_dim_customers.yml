@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: all customers from the jaffle shop including order history information
+    columns:
+      - name: customer_id
+        description: primary key
+        tests:
+          - not_null
+          - unique
