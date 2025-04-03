@@ -1,7 +1,7 @@
 semantic_models:
   - name: orders
     defaults:
-      agg_time_dimension: ordered_at
+      agg_time_dimension: order_day
     description: |
       Order fact table. This table is at the order grain with one row per order.
     model: ref('fct_orders')
@@ -10,20 +10,27 @@ semantic_models:
         type: primary
       - name: location
         type: foreign
-        expr: location_id
+        expr: concat(location_id, order_id)
       - name: customer
         type: foreign
         expr: customer_id
     dimensions:
-      - name: ordered_at
-        expr: date_trunc('day', ordered_at)
+      - name: order_day
+        expr: date_trunc('day', order_day)
         type: time
         type_params:
           time_granularity: day
+      - name: order_month
+        expr: date_trunc('month', order_day)
+        type: time
+        type_params:
+          time_granularity: month
       - name: order_total_dim
         type: categorical
         expr: order_total
       - name: is_food_order
+        type: categorical
+      - name: is_drink_order
         type: categorical
 
     measures:
@@ -67,13 +74,15 @@ semantic_models:
       - name: max_order_value
         expr: order_total
         agg: max
-        agg_time_dimension: ordered_at
+        agg_time_dimension: order_day
       - name: min_order_value
         expr: order_total
         agg: min
 
 metrics:
-#SIMPLE TYPE METRICS
+  
+# SIMPLE TYPES
+
   - name: "order_total"
     description: "Sum of orders value"
     type: simple
@@ -139,7 +148,7 @@ metrics:
     type_params:
       measure: order_cost
 
-#Ratio type metric
+# RATIO METRICS
   - name: "food_order_pct"
     description: "The food cost as the % of the total order"
     label: "food_order_pct"    
@@ -148,7 +157,30 @@ metrics:
       numerator: food_order_amount
       denominator: order_total
 
-#Derived Metrics      
+ # CUMULATIVE METRICS 
+
+  - name: "cumulative_order_amount"
+    label: "cumulative_order_amount"    
+    description: "The cumulative value of all orders"
+    type: cumulative
+    type_params:
+      measure: order_total
+  - name: "cumulative_order_amount_l1m"
+    label: "cumulative_order_amount_l1m"    
+    description: "Trailing 1 month cumulative order amount"
+    type: cumulative
+    type_params:
+      measure: order_total
+      window: 1 month
+  - name: "cumulative_order_amount_mtd"
+    label: "cumulative_order_amount_mtd"    
+    description: "The month to date value of all orders"
+    type: cumulative
+    type_params:
+      measure: order_total
+      grain_to_date: month
+
+# DERIVED METRICS  
 
   - name: "food_order_pct_cumulative"
     label: "food_order_as_percent_of_total_order_amount"    
@@ -173,27 +205,7 @@ metrics:
           alias: cost
           filter: |
             {{Dimension('product__is_food_order')}} = True
- #CUMULATIVE METRICS 
-  - name: "cumulative_order_amount"
-    label: "cumulative_order_amount"    
-    description: "The cumulative value of all orders"
-    type: cumulative
-    type_params:
-      measure: order_total
-  - name: "cumulative_order_ammount_l1m"
-    label: "cumulative_order_ammount_l1m"    
-    description: "Trailing 1 month cumulative order amount"
-    type: cumulative
-    type_params:
-      measure: order_total
-      window: 1 month
-  - name: "cumulative_order_amount_mtd"
-    label: "cumulative_order_amount_mtd"    
-    description: "The month to date value of all orders"
-    type: cumulative
-    type_params:
-      measure: order_total
-      grain_to_date: month
+
 saved_queries:
   - name: order_metrics
     description: testing out order metrics in one table 
