@@ -13,7 +13,6 @@ exposures:
     depends_on:                             # expected
       - ref('fct_orders')
       - ref('dim_customers')
-      # - source('gsheets', 'goals')
       - metric('order_amount')
 
     owner:
@@ -39,6 +38,6 @@ exposures:
       
   - name: jaffle_wrapped
     type: application
-    description: Tell users about their favorite jaffles of the year
-    depends_on: [ ref('fct_orders') ]
+    description: Tell users about what order items are available
+    depends_on: [ ref('order_items') ]
     owner: { email: summer-intern@jaffleshop.com }
