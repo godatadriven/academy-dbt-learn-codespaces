@@ -1,7 +1,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: "jaffle_shop"
+name: "jaffle_shop_semantic"
 version: "1.0.0"
 config-version: 2
 
@@ -34,8 +34,11 @@ vars:
 # using the `{{ config(...) }}` macro.
 
 models:
-  jaffle_shop:
+  jaffle_shop_semantic:
     staging:
       +materialized: view
     marts:
       +materialized: table
+      +contract:
+        enforced: true
+      +access: public
