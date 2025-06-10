@@ -1,0 +1,43 @@
+version: 2
+
+exposures:
+
+  - name: weekly_jaffle_metrics
+    label: Jaffles by the Week              # optional
+    type: dashboard                         # required
+    maturity: high                          # optional
+    url: https://bi.tool/dashboards/1       # optional
+    description: >                          # optional
+      Did someone say "exponential growth"?
+
+    depends_on:                             # expected
+      - ref('fct_orders')
+      - ref('dim_customers')
+      - metric('order_amount')
+
+    owner:
+      name: Callum McData
+      email: data@jaffleshop.com
+
+
+      
+  - name: jaffle_recommender
+    maturity: medium
+    type: ml
+    url: https://jupyter.org/mycoolalg
+    description: >
+      Deep learning to power personalized "Discover Sandwiches Weekly"
+    
+    depends_on:
+      - ref('fct_orders')
+      
+    owner:
+      name: Data Science Drew
+      email: data@jaffleshop.com
+
+      
+  - name: jaffle_wrapped
+    type: application
+    description: Tell users about what order items are available
+    depends_on: [ ref('order_items') ]
+    owner: { email: summer-intern@jaffleshop.com }
