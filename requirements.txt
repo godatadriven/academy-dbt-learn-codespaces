@@ -1,4 +1,5 @@
 dbt-core 
 dbt-snowflake
+dbt-bigquery
 sqlfluff
 sqlparse
