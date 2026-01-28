@@ -1,9 +1,0 @@
-sources:
-- name: jaffle_shop
-  database: raw
-  schema: jaffle_shop # otional, recommend to keep it in 
-  tables: 
-  - name: customers
-    identifier: customers # naam in SNowflake
-  - name: orders
-    identifier: orders
