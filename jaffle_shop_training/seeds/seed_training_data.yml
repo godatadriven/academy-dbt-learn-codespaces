@@ -1,0 +1,37 @@
+version: 2
+
+seeds:
+
+  # -------------------------
+  # Jaffle Shop seeds
+  # -------------------------
+  - name: raw_customers
+    config:
+      schema: jaffle_shop
+      column_types:
+        id: NUMBER
+        first_name: VARCHAR
+        last_name: VARCHAR
+
+  - name: raw_orders
+    config:
+      schema: jaffle_shop
+      column_types:
+        id: NUMBER
+        user_id: NUMBER
+        status: VARCHAR
+        order_date: DATE
+        batched_at: TIMESTAMP_NTZ
+
+  # -------------------------
+  # Stripe seeds
+  # -------------------------
+  - name: raw_payments
+    config:
+      schema: stripe
+      column_types:
+        id: NUMBER
+        order_id: NUMBER
+        payment_method: VARCHAR
+        status: VARCHAR
+        payment_amount: FLOAT
