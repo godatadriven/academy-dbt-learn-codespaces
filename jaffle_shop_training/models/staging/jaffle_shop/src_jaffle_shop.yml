@@ -1,0 +1,8 @@
+sources: 
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables: 
+      - name: orders
+      - name: customers # this the alias we give it in dbt
+        identifier: customers # this is the exact reference in the warehouse
