@@ -1,0 +1,1 @@
+select sum(amount) from {{ ref("fct_orders") }}

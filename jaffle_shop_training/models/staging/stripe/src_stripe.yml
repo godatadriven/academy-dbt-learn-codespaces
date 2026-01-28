@@ -1,0 +1,19 @@
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payments
+        identifier: payment
+        columns:
+          - name: id
+            data_tests:
+              - unique
+          - name: paymentmethod
+            data_tests:
+              - accepted_values:
+                  values:
+                    - coupon
+                    - credit_card
+                    - bank_transfer
+                    - gift_card
