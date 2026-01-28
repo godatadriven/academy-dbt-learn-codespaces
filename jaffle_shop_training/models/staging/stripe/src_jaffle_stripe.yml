@@ -1,0 +1,19 @@
+sources:
+  - name: stripe # this is the name we decide
+    database: raw
+    schema: stripe 
+    tables:
+      - name: payment
+        columns:
+          - name: id
+            data_tests:
+              - not_null
+              - unique
+          - name: paymentmethod
+            data_tests:
+            - accepted_values:
+               values: 
+               - gift_card
+               - credit_card
+               - coupon
+               - bank_transfer
