@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: ""
+    columns:
+      - name: customer_id
+        data_type: number
+        description: ""
+
+      - name: first_name
+        data_type: varchar
+        description: ""
+
+      - name: order_id
+        data_type: number
+        description: ""
+
+      - name: amount
+        data_type: number
+        description: ""

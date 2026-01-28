@@ -1,0 +1,39 @@
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        identifier: customers
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+
+      - name: orders
+        identifier: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          - name: status
+            description: "{{ doc('order_status') }}"
+            data_tests:
+              - accepted_values:
+                  config:
+                    store_failures: false
+                    severity: error
+                    error_if: ">10"
+                    warn_if: ">0"
+                  values: 
+                    - shipped
+                    - placed
+                    - returned
+                    - completed
+          - name: user_id
+            data_tests:
+              - relationships:
+                  field: id
+                  to: source('jaffle_shop', 'customers')

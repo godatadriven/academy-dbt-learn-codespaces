@@ -1,0 +1,23 @@
+models:
+  - name: stg_stripe__payment
+    columns:
+      - name: amount
+        data_tests:
+          - not_null
+
+      - name: paymentmethod
+        data_tests:
+              - accepted_values:
+                  config:
+                    store_failures: false
+                    severity: error
+                    error_if: ">10"
+                    warn_if: ">0"
+                  values: 
+                    - bank_transfer
+                    - coupon
+                    - credit_card
+                    - gift_card
+    
+              
+          
