@@ -1,0 +1,13 @@
+sources: 
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables: 
+      - name: payments # this is the alias
+        identifier: payment # this is the original name
+        columns: 
+          - name: id
+            description: this is the primary key for the payments table
+            data_tests:
+              - unique
+              - not_null

@@ -3,6 +3,14 @@ with
 
     orders as (select * from {{ ref("stg_jaffle_shop__orders") }}),
 
+    fct_orders as 
+    (
+        select 
+            customer_id
+            ,amount
+        from {{ ref("fct_orders") }}
+        ),
+
     customer_orders as (
 
         select
@@ -10,7 +18,6 @@ with
             min(orders.order_date) as first_order_date,
             max(orders.order_date) as most_recent_order_date,
             count(orders.order_id) as number_of_orders
-
         from orders 
 
         group by 1
@@ -21,6 +28,7 @@ with
 
         select
             customers.customer_id,
+            fct_orders.amount as lifetime_value,
             customers.first_name,
             customers.last_name,
             customer_orders.first_order_date,
@@ -30,7 +38,8 @@ with
         from customers
 
         left join customer_orders using (customer_id)
+        left join fct_orders using (customer_id)
 
     )
 
-select * from customer_orders
+select * from final
