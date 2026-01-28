@@ -1,0 +1,9 @@
+sources:
+ - name: stripe # this is the name we decide
+   database: raw
+   schema: stripe # optional, recommend to keep it in
+   tables:
+     - name: payments # this is the name we decide on
+       identifier: payment # this is the exact reference in the warehouse
+       columns:
+         - name: id

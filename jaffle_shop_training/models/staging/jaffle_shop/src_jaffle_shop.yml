@@ -1,9 +1,33 @@
 sources:
-  - name: jaffle_shop
-    database: raw
-    schema: jaffle_shop
-    tables:
-      - name: customers #rename table if you want here
-        identifier: customers #exact reference in the warehouse (raw)
-      - name: orders
-        identifier: orders #exact reference in the warehouse (raw)
+ - name: jaffle_shop # this is the name we decide
+   database: raw
+   schema: jaffle_shop # optional, recommend to keep it in
+   tables:
+     - name: customers # this is the name we decide on
+       identifier: customers # this is the exact reference in the warehouse
+       columns:
+         - name: id
+           data_tests:
+             - unique
+             - not_null
+     - name: orders
+       identifier: orders
+       columns:
+         - name: id
+           data_tests:
+             - unique
+             - not_null
+         - name: user_id
+           data_tests:
+             - relationships:
+                 field: id
+                 to: source('jaffle_shop', 'customers')
+         - name: status
+           description: "{{doc('order_status')}}"
+           data_tests:
+             - accepted_values:
+                 config:
+                   severity: error
+                   error_if: ">10"
+                   warn_if: ">0"
+                 values: ['shipped', 'placed', 'returned', 'completed']
