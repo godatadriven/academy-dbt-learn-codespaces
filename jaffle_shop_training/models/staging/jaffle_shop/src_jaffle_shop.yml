@@ -5,5 +5,34 @@ sources:
     tables:
       - name: customers # this is the name we decide on
         identifier: customers # this is the exact reference in the warehouse
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
       - name: orders
         identifier: orders
+        columns:
+          - name: id
+            description: This is the primary key
+            data_tests:
+              - unique:
+                  config:
+                    severity: warn
+              - not_null
+          - name: status # column
+            description: "{{ doc('order_status') }}"
+            data_tests:
+              - accepted_values:
+                  config:
+                    severity: error
+                    error_if: ">10"
+                    warn_if: ">0"
+                    store_failures: true
+                  values: ['shipped', 'placed', 'returned', 'completed']
+          - name: user_id
+            description: This is a foreign key to the customer table
+            data_tests:
+              - relationships:
+                  field: id
+                  to: source('jaffle_shop', 'customers')
