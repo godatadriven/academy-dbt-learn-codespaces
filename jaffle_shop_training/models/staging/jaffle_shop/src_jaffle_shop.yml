@@ -1,0 +1,9 @@
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop #optional
+    tables:
+      - name: customers #chose easier name
+        identifier: customers #exact reference in the warehouse
+      - name: orders
+        identifier: orders
