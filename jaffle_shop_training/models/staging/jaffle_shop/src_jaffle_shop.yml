@@ -1,0 +1,9 @@
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers #rename table if you want here
+        identifier: customers #exact reference in the warehouse (raw)
+      - name: orders
+        identifier: orders #exact reference in the warehouse (raw)
