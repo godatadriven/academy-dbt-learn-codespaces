@@ -5,5 +5,35 @@ sources:
     tables:
       - name: customers #this is the name we decide on
         identifier: customers # this is the exact reference in the warehouse. You can rename it in name (if you want to make it shorter,...)
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
       - name: orders
         identifier: orders # this is the exact reference in the warehouse
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          - name: status
+            description: "{{ doc('order_status')}}"
+            data_tests:
+              - accepted_values:
+                  config:
+                    severity: error
+                    error_if: ">10:"
+                    warn_if: ">0"
+                    # store_failures: true
+                    # where: "status <> return_pending"
+                  values:
+                    - shipped
+                    - placed
+                    - returned
+                    - completed
+          - name: user_id
+            data_tests:
+              - relationships:
+                  field: id
+                  to: source('jaffle_shop', 'orders')             
