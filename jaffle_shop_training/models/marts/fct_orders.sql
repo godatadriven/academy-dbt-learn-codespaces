@@ -3,7 +3,7 @@ with payments as (
     select
     *
     from {{ ref('stg_stripe__payments') }}
-    where status = 'success'
+    where payment_status = 'success'
 
 ),
 
@@ -13,10 +13,11 @@ orders as (
     from {{ ref('stg_jaffle_shop__orders') }}
 ),
 
+
 payment_orders as (
     select
     order_id,
-    sum(p.amount)/100 as amount
+    sum(payment_amount) as order_amount
 
     from payments p
     group by 1
@@ -25,9 +26,8 @@ payment_orders as (
 final as (
 
     select
-        orders.order_id,
-        orders.customer_id,
-        payment_orders.amount
+        orders.*,
+        payment_orders.order_amount
 
     from orders
 

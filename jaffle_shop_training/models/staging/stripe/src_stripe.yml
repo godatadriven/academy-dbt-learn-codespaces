@@ -3,4 +3,5 @@ sources:
     database: raw
     schema: stripe
     tables:
-      - name: payment
+      - name: payments
+        identifier: payment
