@@ -1,3 +1,5 @@
+version: 2 
+
 models:
   - name: fct_orders
     description: Each record represents one order
