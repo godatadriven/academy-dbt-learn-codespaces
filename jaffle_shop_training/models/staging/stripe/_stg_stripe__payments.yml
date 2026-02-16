@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_stripe__payments
+    description: "add text"
+    columns:
+      - name: payment_id
+        data_type: number
+        description: ""
+        data_tests:
+          - unique
+          - not_null
+
+      - name: order_id
+        data_type: number
+        description: ""
+
+      - name: payment_method
+        data_type: varchar
+        description: ""
+
+      - name: payment_status
+        data_type: varchar
+        description: ""
+
+      - name: payment_amount
+        data_type: number
+        description: ""
+
+      - name: created_at
+        data_type: date
+        description: ""
+
+      - name: batched_at
+        data_type: timestamp_ltz
+        description: ""

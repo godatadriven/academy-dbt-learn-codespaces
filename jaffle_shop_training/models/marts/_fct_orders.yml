@@ -14,3 +14,8 @@ models:
           - relationships:
               field: customer_id
               to: ref('dim_customers')
+      - name: status
+        data_tests:
+          - dbt_utils.not_accepted_values:
+              arguments:
+                values: ['unknown', 'empty']
