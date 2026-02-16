@@ -26,6 +26,8 @@ models:
       - name: payment_amount
         data_type: number
         description: ""
+        data_tests:
+          - is_even
 
       - name: created_at
         data_type: date
