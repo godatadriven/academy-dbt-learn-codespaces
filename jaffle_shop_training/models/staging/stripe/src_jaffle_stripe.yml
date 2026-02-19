@@ -24,3 +24,15 @@ sources:
                    - bank_transfer
                    - gift_card
                    - coupon
+         - name: status
+           description: The status of the payment
+           data_tests:
+             - accepted_values:
+                 values:
+                   - fail
+                   - success
+         - name: orderid
+           data_tests:
+           - relationships:
+               field: order_id
+               to: ref('stg_jaffle_shop__orders')
