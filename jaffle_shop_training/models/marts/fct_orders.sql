@@ -1,10 +1,6 @@
-with payment as
+with payments as
 (
-    select
-    order_id,
-    payment_id,
-    amount/100 as amount
-    from {{ ref("stg_stripe__payment") }}
+    select  * from {{ ref("stg_stripe__payment") }}
     where payment_status='success'
     group by all
 
@@ -13,20 +9,26 @@ with payment as
 
 orders as
 (
-    select
-    order_id,
-    customer_id
-    from {{ ref("stg_jaffle_shop__orders") }}
+    select * from {{ ref("stg_jaffle_shop__orders") }}
 ),
+
+   order_payments as (
+       select
+           order_id,
+           sum(payment_amount) as order_amount
+       from payments
+       group by 1
+   ),
+
+
 
 final as
 (
     select
-    p.order_id,
-    p.amount,
-    o.customer_id
-    from payment p
-    left join orders o on o.order_id=p.order_id
+    o.*,
+    p.order_amount
+    from orders o
+    left join order_payments p using (order_id)
 )
 
 select * from final group by all

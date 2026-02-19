@@ -4,6 +4,6 @@
     )
 }}
 
-select payment_id, amount
+select payment_id, payment_amount
 from {{ ref("stg_stripe__payment") }}
-where amount < 0
+where payment_amount < 0

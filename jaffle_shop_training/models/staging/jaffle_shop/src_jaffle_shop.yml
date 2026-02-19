@@ -31,9 +31,14 @@ sources:
                 - placed
                 - returned
                 - completed    
+                - return_pending
           - name: user_id
             data_tests:
               - relationships:
-                  to: ref('stg_jaffle_shop__customers') #ofwel ref naar staging ofwel source en naam jaffle shop customers
-                  field: customer_id #let op naamgeving
-     
+                  to: ref('stg_jaffle_shop__customers') 
+                  field: customer_id 
+          - name: order_date
+            tests:
+             - dbt_utils.expression_is_true:
+                expression: " <= current_date"
+                severity: warn
