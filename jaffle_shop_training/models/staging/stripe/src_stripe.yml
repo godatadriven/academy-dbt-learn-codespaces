@@ -2,7 +2,23 @@ sources:
  - name: stripe # this is the name we decide
    database: raw
    schema: stripe # optional, recommend to keep it in
+   description: source data for all payments
    tables:
      - name: payments # this is the name we decide on
        identifier: payment # this is the exact reference in the warehouse
-       
+       description: payment data at time of order
+       columns:
+         - name: id
+           description: payment id - primary key
+           data_tests:
+             - unique
+             - not_null       
+         - name: paymentmethod
+           description: method of payment used
+           data_tests:
+             - accepted_values:
+                values: 
+                  - credit card
+                  - bank transfer
+                  - gift card
+                  - coupon
