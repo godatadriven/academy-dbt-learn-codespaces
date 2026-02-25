@@ -27,6 +27,8 @@ final as (
 
     select
         orders.*,
+        {{create_surrogate_key('order_id','customer_id')}} as surrogate_key,
+        {{create_surrogate_key_hash('order_id','customer_id')}} as surrogate_key_hash,
         payment_orders.order_amount
 
     from orders

@@ -25,6 +25,9 @@ clean-targets: # directories to be removed by `dbt clean`
 
 vars:
   truncate_timespan_to: "{{ current_timestamp() }}"
+  the_distant_future: '2099-01-01'
+  my_fun_variable: 99
+  my_other_variable: 'Lucy'
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
