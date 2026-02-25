@@ -6,8 +6,9 @@
 {%- set payment_methods = dbt_utils.get_column_values(
     table=ref('stg_stripe__payments'), 
     column='payment_method') 
-    -%}
---{% set payment_methods = ['credit_card','bank_transfer','gift_card','coupon'] %}
+    %}
+-- {% set payment_methods = ['credit_card','bank_transfer','gift_card','coupon'] %}
+--  {{ payment_methods}}
 
 select 
     order_id,
