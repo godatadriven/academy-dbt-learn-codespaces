@@ -1,9 +1,27 @@
+version: 2
+
 sources:
   - name: stripe
     database: raw
     schema: stripe
+    description: The source data for all incoming payments
     tables:
       - name: payments
         identifier: payment
+        description: Payment data collected at time of sale
         columns:
           - name: id
+            description: The payment id - primary key
+            data_tests:
+              - unique
+              - not_null
+          - name: paymentmethod
+            description: The method of payment used
+            data_tests:
+              - accepted_values:
+                  values:
+                    - credit_card
+                    - bank_transfer
+                    - gift_card
+                    - coupon
+                    

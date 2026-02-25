@@ -1,0 +1,23 @@
+version: 2
+
+models:
+
+  - name: fct_orders
+    description: Each record represents one order
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Foreign key to the dim_customers table
+        data_tests:
+          - relationships:
+              field: customer_id
+              to: ref('dim_customers')
+      - name: status
+        data_tests:
+          - dbt_utils.not_accepted_values:
+              arguments:
+                values: ['Incompleted', 'Unfound']
+
