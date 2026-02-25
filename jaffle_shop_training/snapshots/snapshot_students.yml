@@ -1,0 +1,9 @@
+  snapshots:
+  - name: snapshot_students
+    relation: source('customers', 'customers_2')
+    config:
+      schema: snapshots
+      database: analytics
+      strategy: check
+      unique_key: student_id
+

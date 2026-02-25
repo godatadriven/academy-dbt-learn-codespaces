@@ -4,4 +4,6 @@ sources:
     schema: snapshot_example
     tables: 
       - name: customers_1
-        identifier: customers
+        identifier: customers_1
+      - name: customers_2
+        identifier: customers_2
