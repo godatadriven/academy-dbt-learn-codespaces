@@ -4,6 +4,7 @@
 
 select
     order_id,
+    {{ generate_surrogate_key ('order_id', 'payment_method')}},
     {%- for payment_method in payment_method_list -%}
         sum(
             case
@@ -13,4 +14,4 @@ select
         {%- if not loop.last -%}, {% endif %}
     {% endfor %}
 from {{ ref("stg_stripe__payments") }}
-group by 1
+group by all
