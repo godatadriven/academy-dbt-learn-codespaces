@@ -17,7 +17,7 @@ orders as
 
 payments as 
  (
-        select * from {{ ref('stg_stripe__payment') }}
+        select * from {{ ref('stg_stripe__payments') }}
         where order_status = 'success'
     ),
 

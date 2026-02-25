@@ -1,5 +1,5 @@
 models:
-  - name: stg_stripe__payment
+  - name: stg_stripe__payments
     columns:
       - name: payment_id
         data_tests:
