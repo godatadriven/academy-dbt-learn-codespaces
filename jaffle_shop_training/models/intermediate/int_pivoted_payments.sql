@@ -1,7 +1,11 @@
-{% set payment_method_list = dbt_utils.get_column_values(table=ref('stg_stripe__payments'), column='payment_method') %}
+{% set payment_method_list = dbt_utils.get_column_values(
+    table=ref("stg_stripe__payments"), column="payment_method"
+) %}
+-- {{ payment_method_list }}
 
 select
     order_id,
+    {{ create_surrogate('payment_id', 'order_id') }} as order_sk,
     {%- for payment_method in payment_method_list -%}
         sum(
             case
@@ -11,4 +15,7 @@ select
         {%- if not loop.last -%}, {% endif %}
     {% endfor %}
 from {{ ref("stg_stripe__payments") }}
-group by 1
+group by 1, 2
+
+
+

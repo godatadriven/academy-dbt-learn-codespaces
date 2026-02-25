@@ -1,0 +1,9 @@
+snapshots:
+  - name: student_snapshot
+    relation: source('snapshot_example', 'customers_1')
+    config:
+      schema: snapshots
+      database: analytics
+      unique_key: student_id
+      strategy: timestamp
+      updated_at: updated_at
