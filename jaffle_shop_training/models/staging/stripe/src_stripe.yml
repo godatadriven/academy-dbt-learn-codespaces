@@ -10,15 +10,15 @@ sources:
        columns:
          - name: id
            description: payment id - primary key
-           data_tests:
+           tests:
              - unique
              - not_null       
          - name: paymentmethod
            description: method of payment used
-           data_tests:
+           tests:
              - accepted_values:
                 values: 
-                  - credit card
-                  - bank transfer
-                  - gift card
-                  - coupon
+                  - "credit_card"
+                  - "bank_transfer"
+                  - "gift_card"
+                  - "coupon"
