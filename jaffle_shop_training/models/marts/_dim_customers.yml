@@ -1,10 +1,9 @@
-# models: 
-#   - name: dim_customers
-#     columns: 
-#       - name: customer_id
-#         data_tests:
-#           - unique
-#           - not_null
+models: 
+  - name: dim_customers
+    columns: 
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
 
-          
 

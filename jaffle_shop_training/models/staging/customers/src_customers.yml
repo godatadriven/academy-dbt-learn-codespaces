@@ -1,0 +1,7 @@
+sources: 
+  - name: customers
+    database: analytics
+    schema: snapshot_example
+    tables: 
+      - name: customers_1
+        identifier: customers

@@ -1,0 +1,9 @@
+  snapshots:
+  - name: snapshot_customer_1
+    relation: source('customers', 'customers_1')
+    config:
+      strategy: check
+      unique_key: id
+      check_cols: ['id','first_name','last_name']
+      dbt_valid_to_current: "to_date('9999-12-31')"
+
