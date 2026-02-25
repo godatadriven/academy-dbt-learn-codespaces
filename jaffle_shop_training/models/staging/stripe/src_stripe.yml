@@ -1,7 +1,8 @@
 sources:
- - name: stripe # this is the name we decide
+ - name: stripe
    database: raw
    schema: stripe # optional, recommend to keep it in
+   description: source with all payments
    tables:
      - name: payments # this is the name we decide on
        identifier: payment # this is the exact reference in the warehouse
@@ -10,11 +11,11 @@ sources:
            data_tests:
              - unique
              - not_null
-         - name: status
+         - name: paymentmethod
            data_tests:
               - accepted_values:
-                    config:
-                      severity: error
-                      error_if: ">10"
-                      warn_if: ">0"
-                      values: ['bank_transfer', 'gift_card', 'credit_card', 'coupon']
+                  values: 
+                    - bank_transfer
+                    - gift_card
+                    - credit_card
+                    - coupon

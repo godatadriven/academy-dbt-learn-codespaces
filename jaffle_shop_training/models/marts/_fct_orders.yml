@@ -1,0 +1,16 @@
+models:
+  - name: fct_orders
+    description: each record represents an order
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Foreign key to the dim_customers table
+        data_tests:
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+          
+          

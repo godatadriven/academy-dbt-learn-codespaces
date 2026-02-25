@@ -1,29 +1,26 @@
 with payments as (
-    select
-        payment_id,
-        order_id,
-        payment_method,
-        sum(sales) as summed_amount,
-        status
-    from {{ ref('stg_stripe__payments') }}
-    where status != 'fail'
-    group by 1, 2, 3, 5
+    select * from {{ ref('stg_stripe__payments') }}
+    where payment_status = 'success'
 ),
 
 orders as (
-    select
-        order_id,
-        customer_id,
-    from {{ ref('stg_jaffle_shop__orders') }}
+    select * from {{ ref('stg_jaffle_shop__orders') }}
 ),
 
-summed_orders as (
-    select
-        orders.customer_id,
-        payments.order_id,
-        payments.summed_amount
+order_payments as (
+    select 
+        order_id,
+        sum(payment_amount) as order_amount
     from payments
-    left join orders on (payments.order_id = orders.order_id)
+    group by 1
+),
+
+final as (
+    select
+        orders.*,
+        order_payments.order_amount as customer_lifetime_value
+    from orders
+    left join order_payments on orders.order_id = order_payments.order_id
 )
 
-select * from summed_orders
+select * from final
