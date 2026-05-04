@@ -27,15 +27,15 @@ payments as (
 final as (
 
     select
-        o.order_id,
-        c.customer_id,
-        o.order_date,
-        p.amount
-    from orders o
-    left join customers c
-        on o.customer_id = c.customer_id
-    left join payments p
-        on o.order_id = p.order_id
+        orders.order_id,
+        customers.customer_id,
+        orders.order_date,
+        payments.amount
+    from orders orders
+    left join customers customers
+        on orders.customer_id = customers.customer_id
+    left join payments payments
+        on orders.order_id = payments.order_id
 
 )
 
