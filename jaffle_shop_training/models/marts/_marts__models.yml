@@ -1,0 +1,13 @@
+models:
+  - name: fct_orders
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+      - name: amount
+        data_tests:
+          - no_negative_values
+        
