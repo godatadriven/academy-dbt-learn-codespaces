@@ -31,3 +31,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   jaffle_shop_training:
     # Config indicated by + and applies to all files under models/example/
+    staging:
+     +materialized: view
+    marts:
+     +materialized: table
+    #+tags: michi_tag
+    #+enabled: true
+    #+schema: awesome # this will create  in  dbt_mstellini_awesome.dim_customers .

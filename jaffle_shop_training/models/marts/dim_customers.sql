@@ -1,22 +1,22 @@
 with customers as (
 
     select
-        id as customer_id,
+        customer_id,
         first_name,
         last_name
-    from raw.jaffle_shop.customers
+    from {{ ref('stg_jaffle_shop__customers') }}
 
 ),
 
 orders as (
 
     select
-        id as order_id,
-        user_id as customer_id,
+        order_id,
+        customer_id,
         order_date,
         status
 
-    from raw.jaffle_shop.orders
+    from {{ ref("stg_jaffle_shop__orders") }}
 
 ),
 
@@ -36,6 +36,18 @@ customer_orders as (
 
 ),
 
+payments as (
+
+    select
+        orders.customer_id,
+        sum(amount)/100 as amount
+    from {{ ref("stg_stripe__payment") }}
+    left join orders using (order_id) 
+    where status = 'success' 
+    group by 1
+
+    
+),
 
 final as (
 
@@ -45,11 +57,15 @@ final as (
         customers.last_name,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
-        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
+        amount as total_spent
 
     from customers
 
     left join customer_orders using (customer_id)
+    left join payments using (customer_id)
+
+    where total_spent is not null
 
 )
 

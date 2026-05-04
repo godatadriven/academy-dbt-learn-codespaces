@@ -1,0 +1,25 @@
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payment
+        identifier: payment
+        columns:
+          - name: id
+            data_tests:
+              - unique 
+          - name: status
+            data_tests:
+              - accepted_values:
+                  arguments: 
+                    values:
+                      - success
+                      - fail
+
+
+              
+
+          
+          
+ 

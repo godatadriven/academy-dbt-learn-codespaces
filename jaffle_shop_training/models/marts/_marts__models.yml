@@ -1,0 +1,12 @@
+models:
+  - name: fct_orders
+    columns:
+      - name: customer_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+              config: 
+                severity: error
+                error_if: ">1"
