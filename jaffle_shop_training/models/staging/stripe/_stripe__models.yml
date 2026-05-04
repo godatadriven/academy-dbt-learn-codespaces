@@ -1,0 +1,10 @@
+models:
+  - name: dim_customers_lifetime_value
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: lifetime_value
+        tests:
+          - not_null

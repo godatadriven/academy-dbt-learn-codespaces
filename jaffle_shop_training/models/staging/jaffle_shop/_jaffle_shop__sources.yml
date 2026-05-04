@@ -1,0 +1,15 @@
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        identifier: customers
+      - name: orders
+        identifier: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          
