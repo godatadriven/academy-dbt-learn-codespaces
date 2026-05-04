@@ -1,0 +1,15 @@
+sources:
+  - name: jaffle_shop # what I decide -- project naming convention
+    database: raw # based on the warehouse
+    schema: jaffle_shop # based on the warehouse
+    tables:
+      - name: customers # what I decide -- project naming convention
+        identifier: customers # based on the warehouse
+      - name: orders
+        identifier: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null:
+                  description: hello
