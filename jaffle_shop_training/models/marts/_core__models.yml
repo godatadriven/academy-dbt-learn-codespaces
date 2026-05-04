@@ -1,0 +1,30 @@
+models:
+  - name: fct_orders
+
+    tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "amount >= 0"
+
+    description: ""
+    columns:
+      - name: order_id
+        data_type: number
+        description: ""
+
+      - name: customer_id
+        data_type: number
+        description: ""
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+
+      - name: order_date
+        data_type: date
+        description: ""
+
+      - name: amount
+        data_type: number
+        description: ""

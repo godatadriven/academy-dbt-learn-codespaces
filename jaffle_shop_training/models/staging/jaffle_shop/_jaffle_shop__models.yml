@@ -1,0 +1,12 @@
+models:
+  - name: stg_jaffle_shop__orders
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments: # New and now required :) 
+                values: ['completed', 'returned', 'shipped', 'placed', 'return_pending', 'processing']
