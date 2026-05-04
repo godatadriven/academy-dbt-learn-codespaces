@@ -1,0 +1,12 @@
+sources:
+  - name: stripe_data
+    database: raw
+    schema: stripe
+    tables:
+      - name: payment
+        identifier: payment
+        # columns: 
+        #  - name: amount
+        #    tests:
+        #     - dbt_utils.expression_is_true:
+        #         expression: "amount >= 0"
