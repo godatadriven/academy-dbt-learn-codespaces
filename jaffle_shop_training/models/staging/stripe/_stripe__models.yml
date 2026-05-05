@@ -12,5 +12,5 @@ models:
               arguments:
                 min_value: 0
                 max_value: 5000
-                inclusive: false
+                inclusive: true
           - is_negative
