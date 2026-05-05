@@ -14,3 +14,7 @@ models:
                 max_value: 5000
                 inclusive: true
           - is_negative
+      
+      - name: created_at
+        tests:
+          - assert_order_date_in_past

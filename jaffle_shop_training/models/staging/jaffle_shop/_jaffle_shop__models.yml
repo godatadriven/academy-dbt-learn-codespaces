@@ -10,6 +10,11 @@ models:
           - accepted_values:
               arguments: # New and now required :) 
                 values: ['completed', 'returned', 'shipped', 'placed', 'return_pending', 'processing']
+
+      - name: order_date
+        tests:
+          - assert_order_date_in_past
+
   - name: stg_jaffle_shop__customers
     tests:
       - dbt_utils.unique_combination_of_columns:

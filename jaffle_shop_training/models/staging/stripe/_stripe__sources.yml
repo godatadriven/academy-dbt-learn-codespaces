@@ -10,4 +10,7 @@ sources:
             data_tests:
               - unique
               - not_null
+          - name: created
+            tests:
+              - assert_order_date_in_past
               
