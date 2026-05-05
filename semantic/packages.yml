@@ -4,3 +4,5 @@ packages:
   - package: godatadriven/dbt_date
     version: [">=0.7.0", "<0.8.0"]
     # <see https://github.com/calogica/dbt-date/releases/latest> for the latest version tag
+  - package: dbt-labs/codegen
+    version: 0.14.0

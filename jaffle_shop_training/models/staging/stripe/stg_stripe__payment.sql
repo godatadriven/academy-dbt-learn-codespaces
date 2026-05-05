@@ -13,7 +13,7 @@ renamed as (
         orderid as order_id,
         paymentmethod as payment_method,
         status,
-        amount/100 as amount,
+        {{ cents2dollars(column_name='amount') }} as amount,
         created,
         _batched_at
 

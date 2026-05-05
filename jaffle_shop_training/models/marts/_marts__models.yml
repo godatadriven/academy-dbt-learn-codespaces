@@ -10,4 +10,9 @@ models:
       - name: amount
         data_tests:
           - no_negative_values
+  - name: dim_customers
+    tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "number_of_orders >= 0"
         

@@ -10,5 +10,10 @@ models:
           - accepted_values:
               arguments:
                 values: ['completed','returned','shipped','placed','processing','return_pending']
-
-
+  - name: stg_jaffle_shop__customers
+    columns:
+      - name: name_sk
+        data_tests:
+          - unique
+          - not_null
+      
