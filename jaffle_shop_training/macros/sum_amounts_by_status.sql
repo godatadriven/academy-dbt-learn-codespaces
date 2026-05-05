@@ -12,6 +12,6 @@
 
     {% for status in status_list -%}
         sum(case when {{ status_column_name }} = '{{ status }}' then {{ amount_name }} else 0 end) as {{ status }}_amount{% if not loop.last %}, {% endif %}
-    {% endfor -%}
+    {% endfor %}
 
 {% endmacro %}
