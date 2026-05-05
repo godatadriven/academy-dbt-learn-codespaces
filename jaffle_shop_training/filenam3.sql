@@ -1,0 +1,1 @@
+{{ get_payment_method_amounts3('order_id', 'payment_method') }}

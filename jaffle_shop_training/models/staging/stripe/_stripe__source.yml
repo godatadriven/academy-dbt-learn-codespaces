@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payment
+        columns:
+          - name: id
+            description: "Primary key of the raw payment table."
+            data_tests:
+              - unique
+              - not_null
