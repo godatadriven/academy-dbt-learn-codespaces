@@ -11,6 +11,9 @@ models:
       - name: order_id
         data_type: number
         description: ""
+        data_tests:
+          - unique
+          
 
       - name: customer_id
         data_type: number
