@@ -1,0 +1,35 @@
+# Schema tests for the staging orders model
+models:
+  - name: stg_jaffle_shop__customers
+    columns:
+    #Testing name_sk is unique
+      - name: name_sk
+        data_tests:
+          - unique
+          - not_null
+          
+
+  - name: stg_jaffle_shop__orders
+
+    columns:
+      # Primary key of the orders table
+      - name: order_id
+        data_tests:
+          # Ensures each order appears only once
+          - unique
+          # Ensures every record has an order_id
+          - not_null
+
+      # Business status of the order
+      - name: status
+        data_tests:
+          # Ensures status is restricted to known, valid values
+          - accepted_values:
+              arguments:
+                values:
+                  - shipped          # Order has been shipped
+                  - return_pending   # Return requested, not completed yet
+                  - completed        # Order successfully completed
+                  - placed           # Order placed but not processed yet
+                  - returned         # Order returned
+                  - processing       # Order is currently being processed

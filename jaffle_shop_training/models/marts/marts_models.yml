@@ -1,0 +1,43 @@
+# Schema tests for the fct_orders fact table
+models:
+  - name: fct_orders
+    description: Order-level fact table combining orders and payments
+
+    columns:
+      # Primary key of the order
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+
+      # Foreign key to dim_customers
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+              config:
+                where: customer_id != 101
+
+      # Date the order was placed
+      - name: order_date
+        tests:
+          - not_null
+      
+      # Total successful payment amount for the order
+      - name: amount
+        tests:
+          # Amount must be between 0 and 100000
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 5000
+
+      # Customer order metrics
+      - name: number_of_orders
+        tests:
+          # A customer cannot have a negative number of orders
+          - dbt_utils.expression_is_true:
+              expression: "number_of_orders >= 0"
+
+

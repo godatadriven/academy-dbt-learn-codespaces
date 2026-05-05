@@ -1,0 +1,26 @@
+# Definition of raw source tables coming from the jaffle_shop system
+sources:
+  - name: stripe
+
+    # Physical location of the raw data
+    database: raw
+    schema: stripe
+
+    tables:
+      # Raw payment table (no data quality tests yet)
+      - name: payments
+        # Actual table name in the database
+        identifier: payment
+
+        columns:
+          # Primary key of the raw payment table
+          - name: id
+            data_tests:
+              # Ensures no duplicate order IDs at the source
+              - unique
+              # Ensures every order has an ID
+              - not_null
+              
+          - name: created
+            data_tests:
+              - assert_date_in_past

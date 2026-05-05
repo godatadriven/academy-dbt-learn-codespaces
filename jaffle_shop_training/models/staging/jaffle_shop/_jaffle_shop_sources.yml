@@ -1,0 +1,27 @@
+# Definition of raw source tables coming from the jaffle_shop system
+sources:
+  - name: jaffle_shop
+
+    # Physical location of the raw data
+    database: raw
+    schema: jaffle_shop
+
+    tables:
+      # Raw customers table (no data quality tests yet)
+      - name: customers
+        # Actual table name in the database
+        identifier: customers
+
+      # Raw orders table
+      - name: orders
+        # Actual table name in the database
+        identifier: orders
+
+        columns:
+          # Primary key of the raw orders table
+          - name: id
+            data_tests:
+              # Ensures no duplicate order IDs at the source
+              - unique
+              # Ensures every order has an ID
+              - not_null

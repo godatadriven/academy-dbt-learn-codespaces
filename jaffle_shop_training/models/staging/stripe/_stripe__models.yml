@@ -1,0 +1,34 @@
+# Schema tests for the staging orders model
+models:
+  - name: stg_stripe__payments
+
+    columns:
+      # Primary key of the orders table
+      - name: payment_id
+        data_tests:
+          # Ensures each order appears only once
+          - unique
+          # Ensures every record has an order_id
+          - not_null
+
+      # Business status of the order
+      - name: payment_status
+        data_tests:
+          # Ensures status is restricted to known, valid values
+          - accepted_values:
+              arguments:
+                values:
+                  - fail
+                  - success
+      
+      # Payment method used to complete the payment
+      - name: payment_method
+        data_tests:
+          # Ensures payment_method is restricted to known, valid values
+          - accepted_values:
+              arguments:
+                values:
+                  - coupon
+                  - credit_card
+                  - bank_transfer
+                  - gift_card

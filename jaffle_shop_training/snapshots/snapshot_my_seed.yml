@@ -1,0 +1,7 @@
+snapshots:
+  - name: snapshot_my_seed
+    relation: ref('my_seed')
+    config: 
+      strategy: check
+      check_cols: ['age']
+      unique_key: 'name'
