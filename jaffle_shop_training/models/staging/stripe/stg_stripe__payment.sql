@@ -13,10 +13,9 @@ renamed as (
         orderid as order_id,
         paymentmethod as payment_method,
         status,
-        amount,
+        {{ transform_integer_to_currency_decimal(amount_currency = 'amount') }} as amount,
         created,
         _batched_at
-
     from source
 
 )
