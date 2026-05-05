@@ -28,3 +28,9 @@ models:
       - name: amount
         data_type: number
         description: ""
+
+  - name: dim_customers
+    tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "number_of_orders >= 0"

@@ -10,3 +10,15 @@ models:
           - accepted_values:
               arguments: # New and now required :) 
                 values: ['completed', 'returned', 'shipped', 'placed', 'return_pending', 'processing']
+  - name: stg_jaffle_shop__customers
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - first_name
+              - last_name
+    columns:
+      - name: name_sk
+        data_tests:
+          - unique
+          
