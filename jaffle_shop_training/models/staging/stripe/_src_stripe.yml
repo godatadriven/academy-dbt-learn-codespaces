@@ -1,0 +1,8 @@
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payments # what we decide
+        identifier: payment # exact table name in the warehouse
+    
