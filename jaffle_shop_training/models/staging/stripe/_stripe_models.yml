@@ -1,0 +1,9 @@
+models:
+  - name: stg_stripe__payments
+    columns:
+      - name: payment_method
+        data_tests:
+        - accepted_values:
+            arguments: 
+              values: ['gift_card','coupon','bank_transfer','credit_card']
+    

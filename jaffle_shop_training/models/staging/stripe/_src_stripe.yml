@@ -1,0 +1,21 @@
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payments
+        identifier: payment
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+        config: 
+          freshness:
+            warn_after:
+              count: 12
+              period: hour
+            error_after:
+              count: 365
+              period: day
+          loaded_at_field: _batched_at
