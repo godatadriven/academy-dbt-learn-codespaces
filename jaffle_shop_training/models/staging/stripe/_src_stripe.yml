@@ -1,0 +1,16 @@
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payments
+        identifier: payment
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null  
+          - name: orderid
+            data_tests:
+              - not_null
+              

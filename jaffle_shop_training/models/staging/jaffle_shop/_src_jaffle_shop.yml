@@ -1,0 +1,30 @@
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables: 
+      - name: customers # what we decide
+        identifier: customers # the exact table name
+        columns:
+          - name: id 
+            data_tests:
+            - unique
+            - not_null
+            
+      - name: orders # what we decide
+        identifier: orders # the exact table name
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null      
+        config: 
+          freshness:
+            warn_after:
+              count: 10
+              period: hour
+            error_after:
+              count: 365
+              period: day
+          loaded_at_field: _etl_loaded_at
+
