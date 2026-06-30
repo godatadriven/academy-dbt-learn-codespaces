@@ -28,10 +28,12 @@ payments as (
        payment_id,
        order_id,
        payment_method,
+       payment_status,
        payment_amount,
         payment_created,
        payment_batch_at
     from {{ ref("stg_stripe__payments") }} 
+    where payment_status = 'success'
 
 ),
 
@@ -56,9 +58,7 @@ final as (
         payment_orders.order_amount 
 
     from orders
-
-    left join payment_orders using (order_id)
-
+    left join payment_orders using (order_id) 
 )
 
 select * from final
