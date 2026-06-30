@@ -22,27 +22,25 @@ orders as (
 
 ),
 
-payment as (
+payments as (
 
     select
-        order_id,
-        customer_id,
-        order_date
-        status
-    from stg_stripes.payment
+       payment_id,
+       order_id,
+       payment_method,
+       payment_amount,
+        payment_created,
+       payment_batch_at
+    from {{ ref("stg_stripe__payments") }} 
 
 ),
 
-customer_orders as (
+payment_orders as (
 
     select
-        customer_id,
-
-        min(orders.order_date) as first_order_date,
-        max(orders.order_date) as most_recent_order_date,
-        count(orders.order_id) as number_of_orders
-
-    from orders orders 
+        order_id,
+        sum(payment_amount) as order_amount 
+    from payments payments 
 
     group by 1
 
@@ -52,16 +50,14 @@ customer_orders as (
 final as (
 
     select
-        customers.customer_id,
-        customers.first_name,
-        customers.last_name,
-        customer_orders.first_order_date,
-        customer_orders.most_recent_order_date,
-        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+        orders.customer_id,
+        orders.order_id,
+        orders.status as order_status,
+        payment_orders.order_amount 
 
-    from customers
+    from orders
 
-    left join customer_orders using (customer_id)
+    left join payment_orders using (order_id)
 
 )
 
