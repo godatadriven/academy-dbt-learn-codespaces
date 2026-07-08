@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_stripe__payments
+    description: ""
+    columns:
+      - name: payment_id
+        data_type: number
+        description: ""
+
+      - name: order_id
+        data_type: number
+        description: ""
+
+      - name: payment_method
+        data_type: varchar
+        description: ""
+
+      - name: payment_status
+        data_type: varchar
+        description: ""
+
+      - name: payment_amount
+        data_type: number
+        description: ""
+        tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 5000
+                inclusive: true
+
+      - name: created_at
+        data_type: date
+        description: ""
+
+      - name: _batched_at
+        data_type: timestamp_ltz
+        description: ""
