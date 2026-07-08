@@ -1,0 +1,31 @@
+models:
+  - name: dim_customers
+    description: ""
+    columns:
+      - name: customer_id
+        data_type: number
+        description: ""
+
+      - name: first_name
+        data_type: varchar
+        description: ""
+
+      - name: last_name
+        data_type: varchar
+        description: ""
+
+      - name: first_order_date
+        data_type: date
+        description: ""
+
+      - name: most_recent_order_date
+        data_type: date
+        description: ""
+
+      - name: number_of_orders
+        data_type: number
+        description: ""
+
+      - name: lifetime_value
+        data_type: number
+        description: ""

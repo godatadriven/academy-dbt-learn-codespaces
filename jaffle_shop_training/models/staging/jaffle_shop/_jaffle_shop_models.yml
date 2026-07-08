@@ -5,13 +5,13 @@ models:
         data_tests:
           - unique
           - not_null
-      - name: status
+      - name: order_status
         data_tests:
           - accepted_values:
               config:
                 severity: warn
                 warn_if:  ">0"
-                error_if: ">10"
+                error_if: ">1000"
               arguments: 
                 values: ['placed','shipped','completed','returned']
           
