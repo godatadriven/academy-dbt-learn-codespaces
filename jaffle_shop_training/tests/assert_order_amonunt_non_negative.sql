@@ -1,1 +1,1 @@
-select * from  where amount < 0
+select * from {{ source('marts', 'fct_orders') }} where amount < 0
