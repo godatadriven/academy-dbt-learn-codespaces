@@ -27,3 +27,4 @@ models:
                   - placed
                   - shipped
                   - completed
+                  - processing

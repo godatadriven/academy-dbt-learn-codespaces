@@ -15,4 +15,5 @@ sources:
           - name: status
             data_tests:
               - accepted_values:
-                  values: ['fail','success']
+                  arguments:
+                    values: ['fail','success']
