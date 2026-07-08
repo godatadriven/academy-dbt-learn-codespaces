@@ -12,7 +12,7 @@ renamed as (
         id as customer_id,
         first_name,
         last_name, 
-       lifetime_value as customers_lifetime_value  
+       
     from source
 
 )

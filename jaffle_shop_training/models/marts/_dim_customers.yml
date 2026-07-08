@@ -1,0 +1,30 @@
+models:
+  - name: dim_customers
+    description: "Each row represents a customer"
+    columns:
+      - name: customer_id
+        data_type: number
+        description: "This is the primary key"
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: first_name
+        data_type: varchar
+        description: "the first name of the customere"
+
+      - name: last_name
+        data_type: varchar
+        description: "The last name of the customer"
+
+      - name: first_order_date
+        data_type: date
+        description: "the first date of the order"
+
+      - name: most_recent_order_date
+        data_type: date
+        description: "Most recent date of the order"
+
+      - name: number_of_orders
+        data_type: number
+        description: "Total number of orders, including refunds"

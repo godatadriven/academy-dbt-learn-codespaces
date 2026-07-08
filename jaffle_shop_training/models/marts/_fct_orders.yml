@@ -1,0 +1,23 @@
+models:
+  - name: fct_orders
+    description: "Each row represents a order"
+    columns:
+      - name: order_id
+        data_type: number
+        description: "Unique id of an order"
+
+      - name: customer_id
+        data_type: number
+        description: "Unique id of a customer"
+
+      - name: order_date
+        data_type: date
+        description: "the order date"
+
+      - name: order_status
+        data_type: varchar
+        description: "The status of the order"
+
+      - name: payment_amount
+        data_type: number
+        description: "Amount of payment"
