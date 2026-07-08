@@ -1,0 +1,5 @@
+packages:
+  - package: dbt-labs/codegen
+    version: 0.14.1
+  - package: brooklyn-data/dbt_artifacts
+    version: [">=2.6.0", "<3.0.0"]    

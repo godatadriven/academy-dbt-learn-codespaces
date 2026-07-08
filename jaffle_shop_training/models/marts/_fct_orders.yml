@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: ""
+    columns:
+      - name: order_id
+        data_type: number
+        description: ""
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: customer_id
+        data_type: number
+        description: ""
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('customers')
+                field: id
+
+      - name: order_date
+        data_type: date
+        description: ""
+
+      - name: order_status
+        data_type: varchar
+        description: ""
+
+      - name: amount
+        data_type: number
+        description: ""
+        data_tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: ">= 0"
+
+      - name: amount_excl_returns
+        data_type: number
+        description: ""

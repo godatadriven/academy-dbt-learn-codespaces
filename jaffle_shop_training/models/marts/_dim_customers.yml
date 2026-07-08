@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Each row represents a customer"
+    columns:
+      - name: customer_id
+        data_type: number
+        description: "unique customer id"
+        data_tests:
+          - unique
+          - not_null       
+
+      - name: first_name
+        data_type: varchar
+        description: "first name of customer"
+
+      - name: last_name
+        data_type: varchar
+        description: "last name of customer"
+
+      - name: first_order_date
+        data_type: date
+        description: "first order datea"
+
+      - name: most_recent_order_date
+        data_type: date
+        description: "most recent order date of a customer"
+
+      - name: number_of_orders
+        data_type: number
+        description: "total number of orders so far by a customer"
+        data_tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: '>=0'
+            
+      - name: lifetime_value
+        data_type: number
+        description: "total amount from orders by a customer"
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                inclusive: true

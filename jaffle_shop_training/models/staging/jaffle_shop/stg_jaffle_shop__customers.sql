@@ -17,4 +17,7 @@ renamed as (
 
 )
 
-select * from renamed
+select *,
+ {{ dbt_utils.generate_surrogate_key(['first_name', 'last_name']) }} as name_sk
+
+from renamed

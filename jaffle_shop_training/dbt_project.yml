@@ -32,6 +32,15 @@ models:
   jaffle_shop_training:
     # Config indicated by + and applies to all files under models/example/
     staging:
-      +materialized: view
+      jaffle_shop:
+        +materialized: view
+      stripe:
+        stg_stripe__payment:
+          +materialized: table
+        +materialized: table
     marts:
-      +materialized: table
+      +materialized: view
+
+  
+on-run-end:
+  - "{{ dbt_artifacts.upload_results(results) }}"

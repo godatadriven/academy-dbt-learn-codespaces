@@ -5,6 +5,11 @@ sources:
     tables:
       - name: customers
         identifier: customers
+        columns:
+          - name: name_sk
+            data_tests:
+              - unique
+          
       - name: orders
         identifier: orders
         columns:

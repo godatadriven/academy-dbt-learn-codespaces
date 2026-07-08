@@ -34,3 +34,18 @@ from fct_orders
 select * from dim_customers
 
 select sum(lifetime_value) from dim_customers
+
+select distinct payment_method from {{ ref("stg_stripe__payment") }}
+
+{{ codegen.generate_model_yaml(
+    model_names=['dim_customers']
+) }}
+;
+
+select * from raw.stripe.payment;
+
+select column_name
+from raw.information_schema.columns
+where table_schema = 'STRIPE'
+  and table_name = 'PAYMENT'
+order by ordinal_position

@@ -1,0 +1,1 @@
+select * from {{ source('marts', 'fct_orders') }} where amount < 0
