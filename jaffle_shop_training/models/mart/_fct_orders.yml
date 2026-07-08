@@ -16,8 +16,13 @@ models:
               arguments:
                 to: ref('dim_customers')
                 field: customer_id
+<<<<<<< HEAD
                 config:
                   severity: warn
+=======
+              config:
+                severity: warn
+>>>>>>> 78942db54480cdc087e958ce9ea44a090aa48c6d
       - name: order_status
         description: status of the order
         tests:
