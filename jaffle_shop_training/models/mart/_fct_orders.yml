@@ -13,15 +13,17 @@ models:
         description: foreign key to the customers table
         tests:
           - relationships:
-              to: ref('dim_customers')
-              field: customer_id
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
       - name: order_status
         description: status of the order
         tests:
           - accepted_values:
-              values:
-                - returned
-                - return_pending
-                - placed
-                - shipped
-                - completed
+              arguments: 
+                values:
+                  - returned
+                  - return_pending
+                  - placed
+                  - shipped
+                  - completed
