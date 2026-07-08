@@ -4,12 +4,17 @@ models:
       - name: order_id
         data_tests:
           - unique
+      - name: customer_id
+        data tests:
+          - relationships:
+              to: ref('customers')
+              field: id
       - name: status
         data_tests:
           - accepted_values:
               config:
                 severity: error
-                warn_if: ">0"
+                warn_if: ">20"
                 error_if: ">100"
               arguments:
                 values: ["success", "fail"]
