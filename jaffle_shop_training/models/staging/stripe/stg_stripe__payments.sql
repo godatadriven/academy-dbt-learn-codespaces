@@ -13,8 +13,7 @@ renamed as (
         status,
         amount/100 as amount
 
-    from source
-
+    from source    
 )
 
 select * from renamed

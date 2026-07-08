@@ -1,0 +1,15 @@
+models:
+  - name: stg_stripe__payments
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+      - name: status
+        data_tests:
+          - accepted_values:
+              config:
+                severity: error
+                warn_if: ">0"
+                error_if: ">100"
+              arguments:
+                values: ["success", "fail"]
