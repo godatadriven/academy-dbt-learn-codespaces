@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_orders
+    description: ""
+    columns:
+      - name: order_id
+        data_type: number
+        description: ""
+
+      - name: customer_id
+        data_type: number
+        description: ""
+
+      - name: order_date
+        data_type: date
+        description: ""
+
+      - name: order_status
+        data_type: varchar
+        description: ""
+
+      - name: amount
+        data_type: number
+        description: ""
+
+      - name: lifetime_value
+        data_type: number
+        description: ""
