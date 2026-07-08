@@ -41,7 +41,7 @@ final as (
 
     from customers
 
-    left join customer_orders on customers.customer_id=customer_orders.order_id
+    left join customer_orders on customers.customer_id=customer_orders.customer_id
 
 )
 
