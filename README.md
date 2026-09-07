@@ -1,4 +1,7 @@
 # dbt Training
+
+## xebia.ai/dbt-codespace
+
 Welcome to dbt training! 
 This repository contains two projects:
 - the Jaffle data to explore and understand the fundamentals of dbt
